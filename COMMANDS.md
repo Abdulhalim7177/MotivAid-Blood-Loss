@@ -10,6 +10,8 @@ Must be run every time you open a new terminal.
 - **Mac/Linux:** `source venv/bin/activate`
 
 ### 2. Labeling & Data Prep
+- **duplicate data removal** `python  scripts/deduplicate.py`
+
 - **Interactive Labeling:** `python scripts/label_images.py`
   - Renames and organizes your raw images from `blood-images/` into `dataset/synthetic_train/`.
 - **Audit Data:** `python scripts/audit_images.py`
