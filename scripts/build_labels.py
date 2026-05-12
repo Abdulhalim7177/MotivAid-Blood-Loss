@@ -17,6 +17,7 @@ SURFACES = ['bowl', 'container', 'pad', 'pampers', 'drape', 'floor', 'cloth', 'b
 DIRS = {
     'synthetic_train': os.path.join('dataset', 'synthetic_train'),
     'synthetic_val': os.path.join('dataset', 'synthetic_val'),
+    'synthetic_test': os.path.join('dataset', 'synthetic_test'),
     'real_test': os.path.join('dataset', 'real_test'),
 }
 OUTPUT_FILE = os.path.join('dataset', 'synthetic_labels.json')
