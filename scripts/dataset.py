@@ -16,7 +16,24 @@ from torch.utils.data import Dataset
 import albumentations as A
 from albumentations.pytorch import ToTensorV2
 
-SURFACE_MAP = {'pad': 0, 'gauze': 1, 'sheet': 2, 'drape': 3, 'other': 4}
+SURFACE_MAP = {
+    'bowl': 0,
+    'container': 1,
+    'pad': 2,
+    'pampers': 3,
+    'drape': 4,
+    'floor': 5,
+    'cloth': 6,
+    'bedsheet': 7,
+    'towel': 8,
+    'gauze': 9,
+    'sheet': 10,
+    'floor-and-cloth': 11,
+    'cloth-and-floor': 12,
+    'pad-and-container': 13,
+    'pad-and-floor': 14,
+    'other': 15
+}
 
 
 def get_transforms(mode='train'):
@@ -118,9 +135,18 @@ class BloodLossDataset(Dataset):
 
         # Surface type one-hot
         surface = info.get('surface_type', 'other')
-        surface_idx = SURFACE_MAP.get(surface, 4)
-        surface_onehot = torch.zeros(5)
+        surface_idx = SURFACE_MAP.get(surface, 15)  # Default to 'other' index
+        surface_onehot = torch.zeros(16)  # Updated to 16 surface types
         surface_onehot[surface_idx] = 1.0
+
+        # Extras: distance (cm) / 100, light (0=day, 1=led, 2=dim), clot (0 or 1)
+        dist = info.get('distance_cm', 40.0) / 100.0
+        lighting_str = info.get('lighting', 'daylight')
+        light_val = 0.0
+        if lighting_str == 'led': light_val = 1.0
+        elif lighting_str == 'dim': light_val = 2.0
+        clot_val = 1.0 if info.get('has_clot', False) else 0.0
+        extras = torch.tensor([dist, light_val, clot_val], dtype=torch.float32)
 
         return {
             'image': img_tensor,
@@ -129,5 +155,6 @@ class BloodLossDataset(Dataset):
             'log_volume': torch.tensor(log_volume, dtype=torch.float32),
             'surface_onehot': surface_onehot,
             'surface_idx': surface_idx,
+            'extras': extras,
             'filename': fname
         }

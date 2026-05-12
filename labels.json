@@ -1,0 +1,2363 @@
+{
+  "synthetic_train": {
+    "bowl_1000mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-06_at_8.19.14_AM__4_.jpeg": {
+      "volume_ml": 1000,
+      "surface_type": "bowl",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "bowl_1000mL_20cm_daylight_clot-yes_WhatsApp_Image_2026-04-10_at_1.01.47_PM.jpeg": {
+      "volume_ml": 1000,
+      "surface_type": "bowl",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": true
+    },
+    "bowl_1000mL_20cm_daylight_clot-yes_WhatsApp_Image_2026-04-10_at_1.01.51_PM.jpeg": {
+      "volume_ml": 1000,
+      "surface_type": "bowl",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": true
+    },
+    "bowl_1000mL_20cm_daylight_clot-yes_WhatsApp_Image_2026-04-10_at_1.01.52_PM.jpeg": {
+      "volume_ml": 1000,
+      "surface_type": "bowl",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": true
+    },
+    "bowl_1000mL_20cm_daylight_clot-yes_WhatsApp_Image_2026-04-10_at_1.01.52_PM__1_.jpeg": {
+      "volume_ml": 1000,
+      "surface_type": "bowl",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": true
+    },
+    "bowl_1000mL_20cm_daylight_clot-yes_WhatsApp_Image_2026-04-10_at_1.01.58_PM.jpeg": {
+      "volume_ml": 1000,
+      "surface_type": "bowl",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": true
+    },
+    "bowl_1000mL_20cm_led_clot-yes_WhatsApp_Image_2026-04-06_at_8.19.14_AM__2_.jpeg": {
+      "volume_ml": 1000,
+      "surface_type": "bowl",
+      "distance_cm": 20,
+      "lighting": "led",
+      "has_clot": true
+    },
+    "bowl_1000mL_20cm_led_clot-yes_WhatsApp_Image_2026-04-10_at_1.01.53_PM.jpeg": {
+      "volume_ml": 1000,
+      "surface_type": "bowl",
+      "distance_cm": 20,
+      "lighting": "led",
+      "has_clot": true
+    },
+    "bowl_1000mL_20cm_led_clot-yes_WhatsApp_Image_2026-04-10_at_1.01.55_PM.jpeg": {
+      "volume_ml": 1000,
+      "surface_type": "bowl",
+      "distance_cm": 20,
+      "lighting": "led",
+      "has_clot": true
+    },
+    "bowl_1000mL_20cm_led_clot-yes_WhatsApp_Image_2026-04-10_at_1.03.11_PM.jpeg": {
+      "volume_ml": 1000,
+      "surface_type": "bowl",
+      "distance_cm": 20,
+      "lighting": "led",
+      "has_clot": true
+    },
+    "bowl_1000mL_40cm_daylight_clot-no_WhatsApp_Image_2026-04-10_at_1.01.49_PM.jpeg": {
+      "volume_ml": 1000,
+      "surface_type": "bowl",
+      "distance_cm": 40,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "bowl_1000mL_40cm_daylight_clot-yes_WhatsApp_Image_2026-04-10_at_1.01.56_PM.jpeg": {
+      "volume_ml": 1000,
+      "surface_type": "bowl",
+      "distance_cm": 40,
+      "lighting": "daylight",
+      "has_clot": true
+    },
+    "bowl_100mL_40cm_led_clot-no_WhatsApp_Image_2026-04-10_at_12.16.29_PM__2_.jpeg": {
+      "volume_ml": 100,
+      "surface_type": "bowl",
+      "distance_cm": 40,
+      "lighting": "led",
+      "has_clot": false
+    },
+    "bowl_1100mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-06_at_8.19.23_AM__3_.jpeg": {
+      "volume_ml": 1100,
+      "surface_type": "bowl",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "bowl_1200mL_20cm_daylight_clot-yes_WhatsApp_Image_2026-04-10_at_1.01.57_PM.jpeg": {
+      "volume_ml": 1200,
+      "surface_type": "bowl",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": true
+    },
+    "bowl_1200mL_20cm_daylight_clot-yes_WhatsApp_Image_2026-04-10_at_1.01.58_PM__2_.jpeg": {
+      "volume_ml": 1200,
+      "surface_type": "bowl",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": true
+    },
+    "bowl_1200mL_20cm_daylight_clot-yes_WhatsApp_Image_2026-04-10_at_1.03.12_PM.jpeg": {
+      "volume_ml": 1200,
+      "surface_type": "bowl",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": true
+    },
+    "bowl_1200mL_20cm_led_clot-yes_WhatsApp_Image_2026-04-10_at_1.02.01_PM.jpeg": {
+      "volume_ml": 1200,
+      "surface_type": "bowl",
+      "distance_cm": 20,
+      "lighting": "led",
+      "has_clot": true
+    },
+    "bowl_1200mL_40cm_daylight_clot-yes_WhatsApp_Image_2026-04-10_at_1.01.59_PM.jpeg": {
+      "volume_ml": 1200,
+      "surface_type": "bowl",
+      "distance_cm": 40,
+      "lighting": "daylight",
+      "has_clot": true
+    },
+    "bowl_1200mL_40cm_daylight_clot-yes_WhatsApp_Image_2026-04-10_at_1.01.59_PM__2_.jpeg": {
+      "volume_ml": 1200,
+      "surface_type": "bowl",
+      "distance_cm": 40,
+      "lighting": "daylight",
+      "has_clot": true
+    },
+    "bowl_1200mL_40cm_daylight_clot-yes_WhatsApp_Image_2026-04-10_at_1.02.00_PM.jpeg": {
+      "volume_ml": 1200,
+      "surface_type": "bowl",
+      "distance_cm": 40,
+      "lighting": "daylight",
+      "has_clot": true
+    },
+    "bowl_1200mL_40cm_daylight_clot-yes_WhatsApp_Image_2026-04-10_at_1.02.00_PM__1_.jpeg": {
+      "volume_ml": 1200,
+      "surface_type": "bowl",
+      "distance_cm": 40,
+      "lighting": "daylight",
+      "has_clot": true
+    },
+    "bowl_1200mL_40cm_daylight_clot-yes_WhatsApp_Image_2026-04-10_at_1.03.13_PM.jpeg": {
+      "volume_ml": 1200,
+      "surface_type": "bowl",
+      "distance_cm": 40,
+      "lighting": "daylight",
+      "has_clot": true
+    },
+    "bowl_1200mL_40cm_led_clot-yes_WhatsApp_Image_2026-04-10_at_1.03.14_PM.jpeg": {
+      "volume_ml": 1200,
+      "surface_type": "bowl",
+      "distance_cm": 40,
+      "lighting": "led",
+      "has_clot": true
+    },
+    "bowl_1500mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-10_at_1.03.18_PM.jpeg": {
+      "volume_ml": 1500,
+      "surface_type": "bowl",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "bowl_1500mL_20cm_daylight_clot-yes_WhatsApp_Image_2026-04-10_at_1.01.59_PM__3_.jpeg": {
+      "volume_ml": 1500,
+      "surface_type": "bowl",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": true
+    },
+    "bowl_1500mL_20cm_daylight_clot-yes_WhatsApp_Image_2026-04-10_at_1.02.02_PM.jpeg": {
+      "volume_ml": 1500,
+      "surface_type": "bowl",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": true
+    },
+    "bowl_1500mL_20cm_daylight_clot-yes_WhatsApp_Image_2026-04-10_at_1.02.02_PM__1_.jpeg": {
+      "volume_ml": 1500,
+      "surface_type": "bowl",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": true
+    },
+    "bowl_1500mL_20cm_daylight_clot-yes_WhatsApp_Image_2026-04-10_at_1.03.33_PM__1_.jpeg": {
+      "volume_ml": 1500,
+      "surface_type": "bowl",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": true
+    },
+    "bowl_1500mL_20cm_led_clot-yes_WhatsApp_Image_2026-04-10_at_1.02.03_PM__2_.jpeg": {
+      "volume_ml": 1500,
+      "surface_type": "bowl",
+      "distance_cm": 20,
+      "lighting": "led",
+      "has_clot": true
+    },
+    "bowl_1500mL_20cm_led_clot-yes_WhatsApp_Image_2026-04-10_at_1.03.17_PM.jpeg": {
+      "volume_ml": 1500,
+      "surface_type": "bowl",
+      "distance_cm": 20,
+      "lighting": "led",
+      "has_clot": true
+    },
+    "bowl_1500mL_40cm_daylight_clot-yes_WhatsApp_Image_2026-04-10_at_1.02.01_PM__2_.jpeg": {
+      "volume_ml": 1500,
+      "surface_type": "bowl",
+      "distance_cm": 40,
+      "lighting": "daylight",
+      "has_clot": true
+    },
+    "bowl_1500mL_40cm_daylight_clot-yes_WhatsApp_Image_2026-04-10_at_1.03.15_PM.jpeg": {
+      "volume_ml": 1500,
+      "surface_type": "bowl",
+      "distance_cm": 40,
+      "lighting": "daylight",
+      "has_clot": true
+    },
+    "bowl_1500mL_40cm_led_clot-yes_WhatsApp_Image_2026-04-10_at_1.02.03_PM.jpeg": {
+      "volume_ml": 1500,
+      "surface_type": "bowl",
+      "distance_cm": 40,
+      "lighting": "led",
+      "has_clot": true
+    },
+    "bowl_1500mL_40cm_led_clot-yes_WhatsApp_Image_2026-04-10_at_1.03.16_PM.jpeg": {
+      "volume_ml": 1500,
+      "surface_type": "bowl",
+      "distance_cm": 40,
+      "lighting": "led",
+      "has_clot": true
+    },
+    "bowl_150mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-05_at_5.54.35_PM.jpeg": {
+      "volume_ml": 150,
+      "surface_type": "bowl",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "bowl_150mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-05_at_5.54.35_PM__1_.jpeg": {
+      "volume_ml": 150,
+      "surface_type": "bowl",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "bowl_150mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-06_at_8.19.36_AM.jpeg": {
+      "volume_ml": 150,
+      "surface_type": "bowl",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "bowl_150mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-06_at_8.21.46_AM.jpeg": {
+      "volume_ml": 150,
+      "surface_type": "bowl",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "bowl_150mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-10_at_12.16.58_PM.jpeg": {
+      "volume_ml": 150,
+      "surface_type": "bowl",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "bowl_16mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-06_at_8.19.21_AM__1_.jpeg": {
+      "volume_ml": 16,
+      "surface_type": "bowl",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "bowl_200mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-06_at_8.19.21_AM__2_.jpeg": {
+      "volume_ml": 200,
+      "surface_type": "bowl",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "bowl_200mL_40cm_daylight_clot-no_WhatsApp_Image_2026-04-06_at_8.19.21_AM.jpeg": {
+      "volume_ml": 200,
+      "surface_type": "bowl",
+      "distance_cm": 40,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "bowl_300mL_40cm_daylight_clot-no_WhatsApp_Image_2026-04-06_at_8.19.15_AM.jpeg": {
+      "volume_ml": 300,
+      "surface_type": "bowl",
+      "distance_cm": 40,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "bowl_400mL_40cm_daylight_clot-no_WhatsApp_Image_2026-04-06_at_8.19.22_AM.jpeg": {
+      "volume_ml": 400,
+      "surface_type": "bowl",
+      "distance_cm": 40,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "bowl_500mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-10_at_12.17.03_PM.jpeg": {
+      "volume_ml": 500,
+      "surface_type": "bowl",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "bowl_500mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-10_at_12.17.04_PM.jpeg": {
+      "volume_ml": 500,
+      "surface_type": "bowl",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "bowl_500mL_20cm_led_clot-no_WhatsApp_Image_2026-04-10_at_12.18.50_PM.jpeg": {
+      "volume_ml": 500,
+      "surface_type": "bowl",
+      "distance_cm": 20,
+      "lighting": "led",
+      "has_clot": false
+    },
+    "bowl_500mL_20cm_led_clot-no_WhatsApp_Image_2026-04-10_at_12.18.53_PM.jpeg": {
+      "volume_ml": 500,
+      "surface_type": "bowl",
+      "distance_cm": 20,
+      "lighting": "led",
+      "has_clot": false
+    },
+    "bowl_500mL_20cm_led_clot-no_WhatsApp_Image_2026-04-10_at_12.18.53_PM__1_.jpeg": {
+      "volume_ml": 500,
+      "surface_type": "bowl",
+      "distance_cm": 20,
+      "lighting": "led",
+      "has_clot": false
+    },
+    "bowl_500mL_20cm_led_clot-no_WhatsApp_Image_2026-04-10_at_12.18.54_PM.jpeg": {
+      "volume_ml": 500,
+      "surface_type": "bowl",
+      "distance_cm": 20,
+      "lighting": "led",
+      "has_clot": false
+    },
+    "bowl_500mL_40cm_daylight_clot-no_WhatsApp_Image_2026-04-10_at_12.17.01_PM.jpeg": {
+      "volume_ml": 500,
+      "surface_type": "bowl",
+      "distance_cm": 40,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "bowl_500mL_40cm_daylight_clot-no_WhatsApp_Image_2026-04-10_at_12.17.02_PM.jpeg": {
+      "volume_ml": 500,
+      "surface_type": "bowl",
+      "distance_cm": 40,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "bowl_500mL_40cm_daylight_clot-no_WhatsApp_Image_2026-04-10_at_12.18.50_PM__1_.jpeg": {
+      "volume_ml": 500,
+      "surface_type": "bowl",
+      "distance_cm": 40,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "bowl_500mL_40cm_daylight_clot-no_WhatsApp_Image_2026-04-10_at_12.18.52_PM.jpeg": {
+      "volume_ml": 500,
+      "surface_type": "bowl",
+      "distance_cm": 40,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "bowl_500mL_40cm_daylight_clot-no_WhatsApp_Image_2026-04-10_at_12.18.52_PM__1_.jpeg": {
+      "volume_ml": 500,
+      "surface_type": "bowl",
+      "distance_cm": 40,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "bowl_500mL_40cm_led_clot-no_WhatsApp_Image_2026-04-10_at_12.18.52_PM__2_.jpeg": {
+      "volume_ml": 500,
+      "surface_type": "bowl",
+      "distance_cm": 40,
+      "lighting": "led",
+      "has_clot": false
+    },
+    "bowl_500mL_40cm_led_clot-no_WhatsApp_Image_2026-04-10_at_12.18.54_PM__3_.jpeg": {
+      "volume_ml": 500,
+      "surface_type": "bowl",
+      "distance_cm": 40,
+      "lighting": "led",
+      "has_clot": false
+    },
+    "bowl_500mL_40cm_led_clot-no_WhatsApp_Image_2026-04-10_at_12.18.55_PM.jpeg": {
+      "volume_ml": 500,
+      "surface_type": "bowl",
+      "distance_cm": 40,
+      "lighting": "led",
+      "has_clot": false
+    },
+    "bowl_50mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-05_at_5.53.59_PM__2_.jpeg": {
+      "volume_ml": 50,
+      "surface_type": "bowl",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "bowl_50mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-06_at_8.19.13_AM__4_.jpeg": {
+      "volume_ml": 50,
+      "surface_type": "bowl",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "bowl_50mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-10_at_12.16.24_PM__1_.jpeg": {
+      "volume_ml": 50,
+      "surface_type": "bowl",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "bowl_50mL_20cm_led_clot-no_WhatsApp_Image_2026-04-10_at_12.16.25_PM__1_.jpeg": {
+      "volume_ml": 50,
+      "surface_type": "bowl",
+      "distance_cm": 20,
+      "lighting": "led",
+      "has_clot": false
+    },
+    "bowl_50mL_20cm_led_clot-no_WhatsApp_Image_2026-04-10_at_12.16.26_PM.jpeg": {
+      "volume_ml": 50,
+      "surface_type": "bowl",
+      "distance_cm": 20,
+      "lighting": "led",
+      "has_clot": false
+    },
+    "bowl_50mL_40cm_daylight_clot-no_WhatsApp_Image_2026-04-10_at_12.16.24_PM.jpeg": {
+      "volume_ml": 50,
+      "surface_type": "bowl",
+      "distance_cm": 40,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "bowl_50mL_40cm_daylight_clot-no_WhatsApp_Image_2026-04-10_at_12.16.26_PM__1_.jpeg": {
+      "volume_ml": 50,
+      "surface_type": "bowl",
+      "distance_cm": 40,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "bowl_50mL_40cm_led_clot-yes_WhatsApp_Image_2026-04-10_at_12.16.25_PM.jpeg": {
+      "volume_ml": 50,
+      "surface_type": "bowl",
+      "distance_cm": 40,
+      "lighting": "led",
+      "has_clot": true
+    },
+    "bowl_600mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-10_at_1.01.23_PM__2_.jpeg": {
+      "volume_ml": 600,
+      "surface_type": "bowl",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "bowl_600mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-10_at_12.18.54_PM__1_.jpeg": {
+      "volume_ml": 600,
+      "surface_type": "bowl",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "bowl_600mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-10_at_12.18.54_PM__2_.jpeg": {
+      "volume_ml": 600,
+      "surface_type": "bowl",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "bowl_600mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-10_at_12.18.55_PM__1_.jpeg": {
+      "volume_ml": 600,
+      "surface_type": "bowl",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "bowl_600mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-10_at_12.18.55_PM__2_.jpeg": {
+      "volume_ml": 600,
+      "surface_type": "bowl",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "bowl_600mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-13_at_11.31.01_AM.jpeg": {
+      "volume_ml": 600,
+      "surface_type": "bowl",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "bowl_600mL_20cm_led_clot-no_WhatsApp_Image_2026-04-10_at_1.01.24_PM.jpeg": {
+      "volume_ml": 600,
+      "surface_type": "bowl",
+      "distance_cm": 20,
+      "lighting": "led",
+      "has_clot": false
+    },
+    "bowl_600mL_20cm_led_clot-no_WhatsApp_Image_2026-04-10_at_1.01.24_PM__3_.jpeg": {
+      "volume_ml": 600,
+      "surface_type": "bowl",
+      "distance_cm": 20,
+      "lighting": "led",
+      "has_clot": false
+    },
+    "bowl_600mL_20cm_led_clot-no_WhatsApp_Image_2026-04-10_at_1.01.25_PM__2_.jpeg": {
+      "volume_ml": 600,
+      "surface_type": "bowl",
+      "distance_cm": 20,
+      "lighting": "led",
+      "has_clot": false
+    },
+    "bowl_600mL_20cm_led_clot-no_WhatsApp_Image_2026-04-13_at_11.31.02_AM.jpeg": {
+      "volume_ml": 600,
+      "surface_type": "bowl",
+      "distance_cm": 20,
+      "lighting": "led",
+      "has_clot": false
+    },
+    "bowl_600mL_40cm_daylight_clot-no_WhatsApp_Image_2026-04-06_at_8.19.22_AM__1_.jpeg": {
+      "volume_ml": 600,
+      "surface_type": "bowl",
+      "distance_cm": 40,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "bowl_600mL_40cm_daylight_clot-no_WhatsApp_Image_2026-04-10_at_1.01.23_PM__1_.jpeg": {
+      "volume_ml": 600,
+      "surface_type": "bowl",
+      "distance_cm": 40,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "bowl_600mL_40cm_daylight_clot-no_WhatsApp_Image_2026-04-10_at_1.01.25_PM.jpeg": {
+      "volume_ml": 600,
+      "surface_type": "bowl",
+      "distance_cm": 40,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "bowl_600mL_40cm_daylight_clot-no_WhatsApp_Image_2026-04-13_at_11.31.00_AM.jpeg": {
+      "volume_ml": 600,
+      "surface_type": "bowl",
+      "distance_cm": 40,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "bowl_600mL_40cm_dim_clot-no_WhatsApp_Image_2026-04-10_at_1.01.24_PM__2_.jpeg": {
+      "volume_ml": 600,
+      "surface_type": "bowl",
+      "distance_cm": 40,
+      "lighting": "dim",
+      "has_clot": false
+    },
+    "bowl_600mL_40cm_led_clot-no_WhatsApp_Image_2026-04-10_at_1.01.23_PM.jpeg": {
+      "volume_ml": 600,
+      "surface_type": "bowl",
+      "distance_cm": 40,
+      "lighting": "led",
+      "has_clot": false
+    },
+    "bowl_600mL_40cm_led_clot-no_WhatsApp_Image_2026-04-10_at_1.01.25_PM__1_.jpeg": {
+      "volume_ml": 600,
+      "surface_type": "bowl",
+      "distance_cm": 40,
+      "lighting": "led",
+      "has_clot": false
+    },
+    "bowl_700mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-10_at_1.01.26_PM.jpeg": {
+      "volume_ml": 700,
+      "surface_type": "bowl",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "bowl_700mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-10_at_1.01.26_PM__1_.jpeg": {
+      "volume_ml": 700,
+      "surface_type": "bowl",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "bowl_700mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-10_at_1.01.26_PM__2_.jpeg": {
+      "volume_ml": 700,
+      "surface_type": "bowl",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "bowl_700mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-10_at_1.01.28_PM__1_.jpeg": {
+      "volume_ml": 700,
+      "surface_type": "bowl",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "bowl_700mL_20cm_led_clot-no_WhatsApp_Image_2026-04-10_at_1.01.26_PM__3_.jpeg": {
+      "volume_ml": 700,
+      "surface_type": "bowl",
+      "distance_cm": 20,
+      "lighting": "led",
+      "has_clot": false
+    },
+    "bowl_700mL_20cm_led_clot-no_WhatsApp_Image_2026-04-10_at_1.01.28_PM.jpeg": {
+      "volume_ml": 700,
+      "surface_type": "bowl",
+      "distance_cm": 20,
+      "lighting": "led",
+      "has_clot": false
+    },
+    "bowl_700mL_40cm_daylight_clot-no_WhatsApp_Image_2026-04-10_at_1.01.25_PM__3_.jpeg": {
+      "volume_ml": 700,
+      "surface_type": "bowl",
+      "distance_cm": 40,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "bowl_700mL_40cm_daylight_clot-no_WhatsApp_Image_2026-04-10_at_1.01.27_PM__1_.jpeg": {
+      "volume_ml": 700,
+      "surface_type": "bowl",
+      "distance_cm": 40,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "bowl_700mL_40cm_daylight_clot-no_WhatsApp_Image_2026-04-10_at_1.01.27_PM__2_.jpeg": {
+      "volume_ml": 700,
+      "surface_type": "bowl",
+      "distance_cm": 40,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "bowl_700mL_40cm_daylight_clot-no_WhatsApp_Image_2026-04-10_at_1.01.28_PM__2_.jpeg": {
+      "volume_ml": 700,
+      "surface_type": "bowl",
+      "distance_cm": 40,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "bowl_700mL_40cm_led_clot-no_WhatsApp_Image_2026-04-10_at_1.01.27_PM.jpeg": {
+      "volume_ml": 700,
+      "surface_type": "bowl",
+      "distance_cm": 40,
+      "lighting": "led",
+      "has_clot": false
+    },
+    "bowl_700mL_40cm_led_clot-yes_WhatsApp_Image_2026-04-10_at_1.01.29_PM.jpeg": {
+      "volume_ml": 700,
+      "surface_type": "bowl",
+      "distance_cm": 40,
+      "lighting": "led",
+      "has_clot": true
+    },
+    "bowl_800mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-10_at_1.01.29_PM__1_.jpeg": {
+      "volume_ml": 800,
+      "surface_type": "bowl",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "bowl_800mL_20cm_daylight_clot-yes_WhatsApp_Image_2026-04-10_at_1.01.29_PM__2_.jpeg": {
+      "volume_ml": 800,
+      "surface_type": "bowl",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": true
+    },
+    "bowl_800mL_20cm_daylight_clot-yes_WhatsApp_Image_2026-04-10_at_1.01.30_PM.jpeg": {
+      "volume_ml": 800,
+      "surface_type": "bowl",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": true
+    },
+    "bowl_800mL_20cm_led_clot-yes_WhatsApp_Image_2026-04-10_at_1.01.33_PM__1_.jpeg": {
+      "volume_ml": 800,
+      "surface_type": "bowl",
+      "distance_cm": 20,
+      "lighting": "led",
+      "has_clot": true
+    },
+    "bowl_800mL_20cm_led_clot-yes_WhatsApp_Image_2026-04-10_at_1.01.33_PM__2_.jpeg": {
+      "volume_ml": 800,
+      "surface_type": "bowl",
+      "distance_cm": 20,
+      "lighting": "led",
+      "has_clot": true
+    },
+    "bowl_800mL_20cm_led_clot-yes_WhatsApp_Image_2026-04-10_at_1.01.34_PM.jpeg": {
+      "volume_ml": 800,
+      "surface_type": "bowl",
+      "distance_cm": 20,
+      "lighting": "led",
+      "has_clot": true
+    },
+    "bowl_800mL_40cm_daylight_clot-yes_WhatsApp_Image_2026-04-10_at_1.01.30_PM__1_.jpeg": {
+      "volume_ml": 800,
+      "surface_type": "bowl",
+      "distance_cm": 40,
+      "lighting": "daylight",
+      "has_clot": true
+    },
+    "bowl_800mL_40cm_daylight_clot-yes_WhatsApp_Image_2026-04-10_at_1.01.32_PM__2_.jpeg": {
+      "volume_ml": 800,
+      "surface_type": "bowl",
+      "distance_cm": 40,
+      "lighting": "daylight",
+      "has_clot": true
+    },
+    "bowl_800mL_40cm_daylight_clot-yes_WhatsApp_Image_2026-04-10_at_1.01.33_PM.jpeg": {
+      "volume_ml": 800,
+      "surface_type": "bowl",
+      "distance_cm": 40,
+      "lighting": "daylight",
+      "has_clot": true
+    },
+    "bowl_800mL_40cm_led_clot-yes_WhatsApp_Image_2026-04-10_at_1.01.32_PM.jpeg": {
+      "volume_ml": 800,
+      "surface_type": "bowl",
+      "distance_cm": 40,
+      "lighting": "led",
+      "has_clot": true
+    },
+    "bowl_800mL_40cm_led_clot-yes_WhatsApp_Image_2026-04-10_at_1.01.32_PM__1_.jpeg": {
+      "volume_ml": 800,
+      "surface_type": "bowl",
+      "distance_cm": 40,
+      "lighting": "led",
+      "has_clot": true
+    },
+    "bowl_900mL_20cm_daylight_clot-yes_WhatsApp_Image_2026-04-10_at_1.01.38_PM.jpeg": {
+      "volume_ml": 900,
+      "surface_type": "bowl",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": true
+    },
+    "bowl_900mL_20cm_daylight_clot-yes_WhatsApp_Image_2026-04-10_at_1.01.38_PM__1_.jpeg": {
+      "volume_ml": 900,
+      "surface_type": "bowl",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": true
+    },
+    "bowl_900mL_20cm_daylight_clot-yes_WhatsApp_Image_2026-04-10_at_1.01.38_PM__2_.jpeg": {
+      "volume_ml": 900,
+      "surface_type": "bowl",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": true
+    },
+    "bowl_900mL_20cm_led_clot-yes_WhatsApp_Image_2026-04-10_at_1.01.43_PM.jpeg": {
+      "volume_ml": 900,
+      "surface_type": "bowl",
+      "distance_cm": 20,
+      "lighting": "led",
+      "has_clot": true
+    },
+    "bowl_900mL_20cm_led_clot-yes_WhatsApp_Image_2026-04-10_at_1.01.44_PM.jpeg": {
+      "volume_ml": 900,
+      "surface_type": "bowl",
+      "distance_cm": 20,
+      "lighting": "led",
+      "has_clot": true
+    },
+    "bowl_900mL_40cm_daylight_clot-yes_WhatsApp_Image_2026-04-10_at_1.01.34_PM__1_.jpeg": {
+      "volume_ml": 900,
+      "surface_type": "bowl",
+      "distance_cm": 40,
+      "lighting": "daylight",
+      "has_clot": true
+    },
+    "bowl_900mL_40cm_daylight_clot-yes_WhatsApp_Image_2026-04-10_at_1.01.46_PM.jpeg": {
+      "volume_ml": 900,
+      "surface_type": "bowl",
+      "distance_cm": 40,
+      "lighting": "daylight",
+      "has_clot": true
+    },
+    "bowl_900mL_40cm_daylight_clot-yes_WhatsApp_Image_2026-04-10_at_1.01.46_PM__1_.jpeg": {
+      "volume_ml": 900,
+      "surface_type": "bowl",
+      "distance_cm": 40,
+      "lighting": "daylight",
+      "has_clot": true
+    },
+    "bowl_900mL_40cm_daylight_clot-yes_WhatsApp_Image_2026-04-10_at_1.01.48_PM__1_.jpeg": {
+      "volume_ml": 900,
+      "surface_type": "bowl",
+      "distance_cm": 40,
+      "lighting": "daylight",
+      "has_clot": true
+    },
+    "bowl_900mL_40cm_led_clot-yes_WhatsApp_Image_2026-04-10_at_1.01.47_PM__1_.jpeg": {
+      "volume_ml": 900,
+      "surface_type": "bowl",
+      "distance_cm": 40,
+      "lighting": "led",
+      "has_clot": true
+    },
+    "bowl_900mL_40cm_led_clot-yes_WhatsApp_Image_2026-04-10_at_1.01.48_PM.jpeg": {
+      "volume_ml": 900,
+      "surface_type": "bowl",
+      "distance_cm": 40,
+      "lighting": "led",
+      "has_clot": true
+    },
+    "cloth-and-floor_1500mL_40cm_daylight_clot-no_WhatsApp_Image_2026-04-05_at_5.40.03_PM__1_.jpeg": {
+      "volume_ml": 1500,
+      "surface_type": "cloth",
+      "distance_cm": 40,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "container_100mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-05_at_5.53.59_PM__1_.jpeg": {
+      "volume_ml": 100,
+      "surface_type": "container",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "container_100mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-06_at_8.19.14_AM.jpeg": {
+      "volume_ml": 100,
+      "surface_type": "container",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "container_100mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-06_at_8.19.18_AM.jpeg": {
+      "volume_ml": 100,
+      "surface_type": "container",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "container_100mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-06_at_8.21.12_AM.jpeg": {
+      "volume_ml": 100,
+      "surface_type": "container",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "container_100mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-10_at_12.16.27_PM.jpeg": {
+      "volume_ml": 100,
+      "surface_type": "container",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "container_100mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-10_at_12.16.27_PM__1_.jpeg": {
+      "volume_ml": 100,
+      "surface_type": "container",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "container_100mL_20cm_led_clot-no_WhatsApp_Image_2026-04-10_at_12.16.27_PM__4_.jpeg": {
+      "volume_ml": 100,
+      "surface_type": "container",
+      "distance_cm": 20,
+      "lighting": "led",
+      "has_clot": false
+    },
+    "container_100mL_20cm_led_clot-no_WhatsApp_Image_2026-04-10_at_12.16.28_PM.jpeg": {
+      "volume_ml": 100,
+      "surface_type": "container",
+      "distance_cm": 20,
+      "lighting": "led",
+      "has_clot": false
+    },
+    "container_100mL_40cm_daylight_clot-no_WhatsApp_Image_2026-04-10_at_12.16.26_PM__2_.jpeg": {
+      "volume_ml": 100,
+      "surface_type": "container",
+      "distance_cm": 40,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "container_100mL_40cm_daylight_clot-no_WhatsApp_Image_2026-04-10_at_12.16.28_PM__1_.jpeg": {
+      "volume_ml": 100,
+      "surface_type": "container",
+      "distance_cm": 40,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "container_100mL_40cm_led_clot-no_WhatsApp_Image_2026-04-10_at_12.16.27_PM__3_.jpeg": {
+      "volume_ml": 100,
+      "surface_type": "container",
+      "distance_cm": 40,
+      "lighting": "led",
+      "has_clot": false
+    },
+    "container_100mL_40cm_led_clot-no_WhatsApp_Image_2026-04-10_at_12.16.46_PM.jpeg": {
+      "volume_ml": 100,
+      "surface_type": "container",
+      "distance_cm": 40,
+      "lighting": "led",
+      "has_clot": false
+    },
+    "container_200mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-06_at_8.21.18_AM.jpeg": {
+      "volume_ml": 200,
+      "surface_type": "container",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "container_200mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-10_at_12.16.28_PM__2_.jpeg": {
+      "volume_ml": 200,
+      "surface_type": "container",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "container_200mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-10_at_12.16.29_PM.jpeg": {
+      "volume_ml": 200,
+      "surface_type": "container",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "container_200mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-10_at_12.16.29_PM__1_.jpeg": {
+      "volume_ml": 200,
+      "surface_type": "container",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "container_200mL_20cm_led_clot-no_WhatsApp_Image_2026-04-10_at_12.16.29_PM__3_.jpeg": {
+      "volume_ml": 200,
+      "surface_type": "container",
+      "distance_cm": 20,
+      "lighting": "led",
+      "has_clot": false
+    },
+    "container_200mL_20cm_led_clot-no_WhatsApp_Image_2026-04-10_at_12.16.31_PM.jpeg": {
+      "volume_ml": 200,
+      "surface_type": "container",
+      "distance_cm": 20,
+      "lighting": "led",
+      "has_clot": false
+    },
+    "container_200mL_20cm_led_clot-no_WhatsApp_Image_2026-04-10_at_12.16.31_PM__1_.jpeg": {
+      "volume_ml": 200,
+      "surface_type": "container",
+      "distance_cm": 20,
+      "lighting": "led",
+      "has_clot": false
+    },
+    "container_200mL_40cm_daylight_clot-no_WhatsApp_Image_2026-04-10_at_12.16.30_PM.jpeg": {
+      "volume_ml": 200,
+      "surface_type": "container",
+      "distance_cm": 40,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "container_200mL_40cm_daylight_clot-no_WhatsApp_Image_2026-04-10_at_12.16.30_PM__1_.jpeg": {
+      "volume_ml": 200,
+      "surface_type": "container",
+      "distance_cm": 40,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "container_200mL_40cm_daylight_clot-no_WhatsApp_Image_2026-04-10_at_12.16.30_PM__2_.jpeg": {
+      "volume_ml": 200,
+      "surface_type": "container",
+      "distance_cm": 40,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "container_200mL_40cm_led_clot-no_WhatsApp_Image_2026-04-10_at_12.16.30_PM__3_.jpeg": {
+      "volume_ml": 200,
+      "surface_type": "container",
+      "distance_cm": 40,
+      "lighting": "led",
+      "has_clot": false
+    },
+    "container_200mL_40cm_led_clot-no_WhatsApp_Image_2026-04-10_at_12.16.31_PM__4_.jpeg": {
+      "volume_ml": 200,
+      "surface_type": "container",
+      "distance_cm": 40,
+      "lighting": "led",
+      "has_clot": false
+    },
+    "container_200mL_40cm_led_clot-no_WhatsApp_Image_2026-04-10_at_12.16.32_PM.jpeg": {
+      "volume_ml": 200,
+      "surface_type": "container",
+      "distance_cm": 40,
+      "lighting": "led",
+      "has_clot": false
+    },
+    "container_250mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-10_at_12.16.37_PM__1_.jpeg": {
+      "volume_ml": 250,
+      "surface_type": "container",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "container_250mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-10_at_12.16.37_PM__2_.jpeg": {
+      "volume_ml": 250,
+      "surface_type": "container",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "container_250mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-10_at_12.16.38_PM.jpeg": {
+      "volume_ml": 250,
+      "surface_type": "container",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "container_250mL_20cm_led_clot-no_WhatsApp_Image_2026-04-10_at_12.16.40_PM.jpeg": {
+      "volume_ml": 250,
+      "surface_type": "container",
+      "distance_cm": 20,
+      "lighting": "led",
+      "has_clot": false
+    },
+    "container_250mL_20cm_led_clot-no_WhatsApp_Image_2026-04-10_at_12.16.43_PM.jpeg": {
+      "volume_ml": 250,
+      "surface_type": "container",
+      "distance_cm": 20,
+      "lighting": "led",
+      "has_clot": false
+    },
+    "container_250mL_20cm_led_clot-no_WhatsApp_Image_2026-04-10_at_12.16.44_PM.jpeg": {
+      "volume_ml": 250,
+      "surface_type": "container",
+      "distance_cm": 20,
+      "lighting": "led",
+      "has_clot": false
+    },
+    "container_250mL_40cm_daylight_clot-no_WhatsApp_Image_2026-04-10_at_12.16.41_PM.jpeg": {
+      "volume_ml": 250,
+      "surface_type": "container",
+      "distance_cm": 40,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "container_250mL_40cm_daylight_clot-no_WhatsApp_Image_2026-04-10_at_12.16.41_PM__1_.jpeg": {
+      "volume_ml": 250,
+      "surface_type": "container",
+      "distance_cm": 40,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "container_250mL_40cm_daylight_clot-no_WhatsApp_Image_2026-04-10_at_12.16.41_PM__2_.jpeg": {
+      "volume_ml": 250,
+      "surface_type": "container",
+      "distance_cm": 40,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "container_250mL_40cm_led_clot-no_WhatsApp_Image_2026-04-10_at_12.16.42_PM.jpeg": {
+      "volume_ml": 250,
+      "surface_type": "container",
+      "distance_cm": 40,
+      "lighting": "led",
+      "has_clot": false
+    },
+    "container_250mL_40cm_led_clot-no_WhatsApp_Image_2026-04-10_at_12.16.42_PM__1_.jpeg": {
+      "volume_ml": 250,
+      "surface_type": "container",
+      "distance_cm": 40,
+      "lighting": "led",
+      "has_clot": false
+    },
+    "container_250mL_40cm_led_clot-no_WhatsApp_Image_2026-04-10_at_12.16.49_PM.jpeg": {
+      "volume_ml": 250,
+      "surface_type": "container",
+      "distance_cm": 40,
+      "lighting": "led",
+      "has_clot": false
+    },
+    "container_300mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-06_at_8.19.19_AM.jpeg": {
+      "volume_ml": 300,
+      "surface_type": "container",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "container_300mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-06_at_8.21.14_AM.jpeg": {
+      "volume_ml": 300,
+      "surface_type": "container",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "container_300mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-10_at_12.16.34_PM__3_.jpeg": {
+      "volume_ml": 300,
+      "surface_type": "container",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "container_300mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-10_at_12.16.34_PM__4_.jpeg": {
+      "volume_ml": 300,
+      "surface_type": "container",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "container_300mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-10_at_12.16.35_PM.jpeg": {
+      "volume_ml": 300,
+      "surface_type": "container",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "container_300mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-10_at_12.16.35_PM__1_.jpeg": {
+      "volume_ml": 300,
+      "surface_type": "container",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "container_300mL_20cm_led_clot-no_WhatsApp_Image_2026-04-10_at_12.16.36_PM__3_.jpeg": {
+      "volume_ml": 300,
+      "surface_type": "container",
+      "distance_cm": 20,
+      "lighting": "led",
+      "has_clot": false
+    },
+    "container_300mL_20cm_led_clot-no_WhatsApp_Image_2026-04-10_at_12.16.37_PM.jpeg": {
+      "volume_ml": 300,
+      "surface_type": "container",
+      "distance_cm": 20,
+      "lighting": "led",
+      "has_clot": false
+    },
+    "container_300mL_40cm_daylight_clot-no_WhatsApp_Image_2026-04-10_at_12.16.35_PM__2_.jpeg": {
+      "volume_ml": 300,
+      "surface_type": "container",
+      "distance_cm": 40,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "container_300mL_40cm_daylight_clot-no_WhatsApp_Image_2026-04-10_at_12.16.35_PM__3_.jpeg": {
+      "volume_ml": 300,
+      "surface_type": "container",
+      "distance_cm": 40,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "container_300mL_40cm_daylight_clot-no_WhatsApp_Image_2026-04-10_at_12.16.35_PM__4_.jpeg": {
+      "volume_ml": 300,
+      "surface_type": "container",
+      "distance_cm": 40,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "container_300mL_40cm_daylight_clot-no_WhatsApp_Image_2026-04-10_at_12.16.36_PM.jpeg": {
+      "volume_ml": 300,
+      "surface_type": "container",
+      "distance_cm": 40,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "container_300mL_40cm_led_clot-no_WhatsApp_Image_2026-04-10_at_12.16.36_PM__1_.jpeg": {
+      "volume_ml": 300,
+      "surface_type": "container",
+      "distance_cm": 40,
+      "lighting": "led",
+      "has_clot": false
+    },
+    "container_300mL_40cm_led_clot-no_WhatsApp_Image_2026-04-10_at_12.16.36_PM__2_.jpeg": {
+      "volume_ml": 300,
+      "surface_type": "container",
+      "distance_cm": 40,
+      "lighting": "led",
+      "has_clot": false
+    },
+    "container_300mL_40cm_led_clot-no_WhatsApp_Image_2026-04-10_at_12.16.39_PM.jpeg": {
+      "volume_ml": 300,
+      "surface_type": "container",
+      "distance_cm": 40,
+      "lighting": "led",
+      "has_clot": false
+    },
+    "container_400mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-06_at_8.21.19_AM.jpeg": {
+      "volume_ml": 400,
+      "surface_type": "container",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "container_50mL_40cm_led_clot-no_WhatsApp_Image_2026-04-10_at_12.16.27_PM__2_.jpeg": {
+      "volume_ml": 50,
+      "surface_type": "container",
+      "distance_cm": 40,
+      "lighting": "led",
+      "has_clot": false
+    },
+    "container_80mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-06_at_8.19.14_AM__1_.jpeg": {
+      "volume_ml": 80,
+      "surface_type": "container",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "drape_1000mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-06_at_8.21.10_AM.jpeg": {
+      "volume_ml": 1000,
+      "surface_type": "drape",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "drape_1000mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-10_at_1.02.08_PM__2_.jpeg": {
+      "volume_ml": 1000,
+      "surface_type": "drape",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "drape_1000mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-10_at_1.02.09_PM.jpeg": {
+      "volume_ml": 1000,
+      "surface_type": "drape",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "drape_1000mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-10_at_1.02.10_PM__1_.jpeg": {
+      "volume_ml": 1000,
+      "surface_type": "drape",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "drape_1000mL_20cm_led_clot-no_WhatsApp_Image_2026-04-10_at_1.02.09_PM__3_.jpeg": {
+      "volume_ml": 1000,
+      "surface_type": "drape",
+      "distance_cm": 20,
+      "lighting": "led",
+      "has_clot": false
+    },
+    "drape_1000mL_20cm_led_clot-yes_WhatsApp_Image_2026-04-10_at_1.03.32_PM.jpeg": {
+      "volume_ml": 1000,
+      "surface_type": "drape",
+      "distance_cm": 20,
+      "lighting": "led",
+      "has_clot": true
+    },
+    "drape_1000mL_40cm_daylight_clot-no_WhatsApp_Image_2026-04-10_at_1.02.10_PM.jpeg": {
+      "volume_ml": 1000,
+      "surface_type": "drape",
+      "distance_cm": 40,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "drape_1000mL_40cm_daylight_clot-yes_WhatsApp_Image_2026-04-10_at_1.03.30_PM.jpeg": {
+      "volume_ml": 1000,
+      "surface_type": "drape",
+      "distance_cm": 40,
+      "lighting": "daylight",
+      "has_clot": true
+    },
+    "drape_1000mL_40cm_led_clot-no_WhatsApp_Image_2026-04-10_at_1.02.11_PM.jpeg": {
+      "volume_ml": 1000,
+      "surface_type": "drape",
+      "distance_cm": 40,
+      "lighting": "led",
+      "has_clot": false
+    },
+    "drape_1000mL_40cm_led_clot-yes_WhatsApp_Image_2026-04-10_at_1.03.31_PM__2_.jpeg": {
+      "volume_ml": 1000,
+      "surface_type": "drape",
+      "distance_cm": 40,
+      "lighting": "led",
+      "has_clot": true
+    },
+    "drape_1500mL_20cm_daylight_clot-yes_WhatsApp_Image_2026-04-10_at_1.03.31_PM.jpeg": {
+      "volume_ml": 1500,
+      "surface_type": "drape",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": true
+    },
+    "drape_1500mL_20cm_led_clot-yes_WhatsApp_Image_2026-04-10_at_1.03.32_PM__1_.jpeg": {
+      "volume_ml": 1500,
+      "surface_type": "drape",
+      "distance_cm": 20,
+      "lighting": "led",
+      "has_clot": true
+    },
+    "drape_1500mL_20cm_led_clot-yes_WhatsApp_Image_2026-04-10_at_1.03.34_PM__1_.jpeg": {
+      "volume_ml": 1500,
+      "surface_type": "drape",
+      "distance_cm": 20,
+      "lighting": "led",
+      "has_clot": true
+    },
+    "drape_1500mL_40cm_daylight_clot-yes_WhatsApp_Image_2026-04-10_at_1.03.32_PM__2_.jpeg": {
+      "volume_ml": 1500,
+      "surface_type": "drape",
+      "distance_cm": 40,
+      "lighting": "daylight",
+      "has_clot": true
+    },
+    "drape_1500mL_40cm_daylight_clot-yes_WhatsApp_Image_2026-04-10_at_1.03.33_PM.jpeg": {
+      "volume_ml": 1500,
+      "surface_type": "drape",
+      "distance_cm": 40,
+      "lighting": "daylight",
+      "has_clot": true
+    },
+    "drape_1500mL_40cm_led_clot-yes_WhatsApp_Image_2026-04-10_at_1.03.33_PM__3_.jpeg": {
+      "volume_ml": 1500,
+      "surface_type": "drape",
+      "distance_cm": 40,
+      "lighting": "led",
+      "has_clot": true
+    },
+    "drape_1500mL_40cm_led_clot-yes_WhatsApp_Image_2026-04-10_at_1.03.34_PM.jpeg": {
+      "volume_ml": 1500,
+      "surface_type": "drape",
+      "distance_cm": 40,
+      "lighting": "led",
+      "has_clot": true
+    },
+    "drape_200mL_20cm_dark_clot-no_WhatsApp_Image_2026-04-05_at_5.40.00_PM.jpeg": {
+      "volume_ml": 200,
+      "surface_type": "drape",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "drape_200mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-10_at_1.02.04_PM.jpeg": {
+      "volume_ml": 200,
+      "surface_type": "drape",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "drape_200mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-10_at_1.02.04_PM__1_.jpeg": {
+      "volume_ml": 200,
+      "surface_type": "drape",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "drape_200mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-10_at_1.02.05_PM.jpeg": {
+      "volume_ml": 200,
+      "surface_type": "drape",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "drape_200mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-10_at_1.02.07_PM.jpeg": {
+      "volume_ml": 200,
+      "surface_type": "drape",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "drape_200mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-10_at_1.03.20_PM.jpeg": {
+      "volume_ml": 200,
+      "surface_type": "drape",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "drape_200mL_20cm_led_clot-no_WhatsApp_Image_2026-04-10_at_1.03.26_PM.jpeg": {
+      "volume_ml": 200,
+      "surface_type": "drape",
+      "distance_cm": 20,
+      "lighting": "led",
+      "has_clot": false
+    },
+    "drape_200mL_20cm_led_clot-yes_WhatsApp_Image_2026-04-06_at_8.21.55_AM.jpeg": {
+      "volume_ml": 200,
+      "surface_type": "drape",
+      "distance_cm": 20,
+      "lighting": "led",
+      "has_clot": true
+    },
+    "drape_200mL_40cm_daylight_clot-no_WhatsApp_Image_2026-04-10_at_1.03.19_PM.jpeg": {
+      "volume_ml": 200,
+      "surface_type": "drape",
+      "distance_cm": 40,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "drape_200mL_40cm_daylight_clot-no_WhatsApp_Image_2026-04-10_at_1.03.22_PM.jpeg": {
+      "volume_ml": 200,
+      "surface_type": "drape",
+      "distance_cm": 40,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "drape_200mL_40cm_daylight_clot-yes_WhatsApp_Image_2026-04-10_at_1.02.05_PM__3_.jpeg": {
+      "volume_ml": 200,
+      "surface_type": "drape",
+      "distance_cm": 40,
+      "lighting": "daylight",
+      "has_clot": true
+    },
+    "drape_200mL_40cm_led_clot-no_WhatsApp_Image_2026-04-10_at_1.03.21_PM.jpeg": {
+      "volume_ml": 200,
+      "surface_type": "drape",
+      "distance_cm": 40,
+      "lighting": "led",
+      "has_clot": false
+    },
+    "drape_300mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-05_at_5.40.00_PM__3_.jpeg": {
+      "volume_ml": 300,
+      "surface_type": "drape",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "drape_300mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-05_at_5.40.02_PM__1_.jpeg": {
+      "volume_ml": 300,
+      "surface_type": "drape",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "drape_300mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-05_at_5.40.03_PM.jpeg": {
+      "volume_ml": 300,
+      "surface_type": "drape",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "drape_300mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-06_at_8.19.54_AM.jpeg": {
+      "volume_ml": 300,
+      "surface_type": "drape",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "drape_400mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-06_at_8.19.12_AM.jpeg": {
+      "volume_ml": 400,
+      "surface_type": "drape",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "drape_400mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-06_at_8.19.16_AM.jpeg": {
+      "volume_ml": 400,
+      "surface_type": "drape",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "drape_400mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-06_at_8.21.08_AM.jpeg": {
+      "volume_ml": 400,
+      "surface_type": "drape",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "drape_400mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-06_at_8.21.09_AM.jpeg": {
+      "volume_ml": 400,
+      "surface_type": "drape",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "drape_500mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-06_at_8.19.12_AM__5_.jpeg": {
+      "volume_ml": 500,
+      "surface_type": "drape",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "drape_500mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-10_at_1.02.06_PM.jpeg": {
+      "volume_ml": 500,
+      "surface_type": "drape",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "drape_500mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-10_at_1.02.07_PM__1_.jpeg": {
+      "volume_ml": 500,
+      "surface_type": "drape",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "drape_500mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-10_at_1.03.25_PM.jpeg": {
+      "volume_ml": 500,
+      "surface_type": "drape",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "drape_500mL_20cm_daylight_clot-yes_WhatsApp_Image_2026-04-10_at_1.02.06_PM__2_.jpeg": {
+      "volume_ml": 500,
+      "surface_type": "drape",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": true
+    },
+    "drape_500mL_20cm_led_clot-yes_WhatsApp_Image_2026-04-10_at_1.03.27_PM.jpeg": {
+      "volume_ml": 500,
+      "surface_type": "drape",
+      "distance_cm": 20,
+      "lighting": "led",
+      "has_clot": true
+    },
+    "drape_500mL_40cm_daylight_clot-no_WhatsApp_Image_2026-04-10_at_1.02.08_PM.jpeg": {
+      "volume_ml": 500,
+      "surface_type": "drape",
+      "distance_cm": 40,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "drape_500mL_40cm_daylight_clot-no_WhatsApp_Image_2026-04-10_at_1.02.09_PM__2_.jpeg": {
+      "volume_ml": 500,
+      "surface_type": "drape",
+      "distance_cm": 40,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "drape_500mL_40cm_daylight_clot-no_WhatsApp_Image_2026-04-10_at_1.03.24_PM.jpeg": {
+      "volume_ml": 500,
+      "surface_type": "drape",
+      "distance_cm": 40,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "drape_500mL_40cm_daylight_clot-no_WhatsApp_Image_2026-04-13_at_11.31.03_AM.jpeg": {
+      "volume_ml": 500,
+      "surface_type": "drape",
+      "distance_cm": 40,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "drape_500mL_40cm_daylight_clot-yes_WhatsApp_Image_2026-04-10_at_1.03.28_PM.jpeg": {
+      "volume_ml": 500,
+      "surface_type": "drape",
+      "distance_cm": 40,
+      "lighting": "daylight",
+      "has_clot": true
+    },
+    "drape_500mL_40cm_led_clot-yes_WhatsApp_Image_2026-04-10_at_1.03.29_PM.jpeg": {
+      "volume_ml": 500,
+      "surface_type": "drape",
+      "distance_cm": 40,
+      "lighting": "led",
+      "has_clot": true
+    },
+    "drape_600mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-06_at_8.19.13_AM.jpeg": {
+      "volume_ml": 600,
+      "surface_type": "drape",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "drape_600mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-06_at_8.19.17_AM.jpeg": {
+      "volume_ml": 600,
+      "surface_type": "drape",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "drape_700mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-06_at_8.21.11_AM.jpeg": {
+      "volume_ml": 700,
+      "surface_type": "drape",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "drape_800mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-06_at_8.19.13_AM__2_.jpeg": {
+      "volume_ml": 800,
+      "surface_type": "drape",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "drape_900mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-06_at_8.19.13_AM__3_.jpeg": {
+      "volume_ml": 900,
+      "surface_type": "drape",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "floor-and-cloth_1000mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-06_at_8.19.47_AM__1_.jpeg": {
+      "volume_ml": 1000,
+      "surface_type": "floor",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "floor-and-cloth_1000mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-06_at_8.19.48_AM.jpeg": {
+      "volume_ml": 1000,
+      "surface_type": "floor",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "floor-and-cloth_1000mL_40cm_daylight_clot-no_WhatsApp_Image_2026-04-06_at_8.19.47_AM.jpeg": {
+      "volume_ml": 1000,
+      "surface_type": "floor",
+      "distance_cm": 40,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "floor-and-cloth_1100mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-06_at_8.19.49_AM.jpeg": {
+      "volume_ml": 1100,
+      "surface_type": "floor",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "floor-and-cloth_1100mL_40cm_daylight_clot-no_WhatsApp_Image_2026-04-06_at_8.21.51_AM.jpeg": {
+      "volume_ml": 1100,
+      "surface_type": "floor",
+      "distance_cm": 40,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "floor-and-cloth_1200mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-06_at_8.19.12_AM__3_.jpeg": {
+      "volume_ml": 1200,
+      "surface_type": "floor",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "floor-and-cloth_1200mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-06_at_8.19.50_AM__1_.jpeg": {
+      "volume_ml": 1200,
+      "surface_type": "floor",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "floor-and-cloth_1200mL_40cm_daylight_clot-no_WhatsApp_Image_2026-04-06_at_8.19.50_AM.jpeg": {
+      "volume_ml": 1200,
+      "surface_type": "floor",
+      "distance_cm": 40,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "floor-and-cloth_1300mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-06_at_8.19.51_AM__1_.jpeg": {
+      "volume_ml": 1300,
+      "surface_type": "floor",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "floor-and-cloth_1300mL_40cm_daylight_clot-no_WhatsApp_Image_2026-04-06_at_8.19.51_AM.jpeg": {
+      "volume_ml": 1300,
+      "surface_type": "floor",
+      "distance_cm": 40,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "floor-and-cloth_1400mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-06_at_8.19.52_AM.jpeg": {
+      "volume_ml": 1400,
+      "surface_type": "floor",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "floor-and-cloth_1400mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-06_at_8.21.52_AM.jpeg": {
+      "volume_ml": 1400,
+      "surface_type": "floor",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "floor-and-cloth_1400mL_40cm_daylight_clot-no_WhatsApp_Image_2026-04-05_at_5.40.04_PM__2_.jpeg": {
+      "volume_ml": 1400,
+      "surface_type": "floor",
+      "distance_cm": 40,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "floor-and-cloth_1500mL_40cm_daylight_clot-no_WhatsApp_Image_2026-04-05_at_5.40.04_PM.jpeg": {
+      "volume_ml": 1500,
+      "surface_type": "floor",
+      "distance_cm": 40,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "floor-and-cloth_1500mL_40cm_daylight_clot-no_WhatsApp_Image_2026-04-06_at_8.19.53_AM.jpeg": {
+      "volume_ml": 1500,
+      "surface_type": "floor",
+      "distance_cm": 40,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "floor-and-cloth_1500mL_40cm_daylight_clot-yes_WhatsApp_Image_2026-04-05_at_5.40.04_PM__1_.jpeg": {
+      "volume_ml": 1500,
+      "surface_type": "floor",
+      "distance_cm": 40,
+      "lighting": "daylight",
+      "has_clot": true
+    },
+    "floor-and-cloth_300mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-06_at_8.21.53_AM.jpeg": {
+      "volume_ml": 300,
+      "surface_type": "floor",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "floor-and-cloth_500mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-06_at_8.19.42_AM.jpeg": {
+      "volume_ml": 500,
+      "surface_type": "floor",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "floor-and-cloth_500mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-06_at_8.21.48_AM.jpeg": {
+      "volume_ml": 500,
+      "surface_type": "floor",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "floor-and-cloth_500mL_40cm_daylight_clot-no_WhatsApp_Image_2026-04-05_at_5.54.34_PM__2_.jpeg": {
+      "volume_ml": 500,
+      "surface_type": "floor",
+      "distance_cm": 40,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "floor-and-cloth_500mL_40cm_led_clot-no_WhatsApp_Image_2026-04-06_at_8.19.43_AM.jpeg": {
+      "volume_ml": 500,
+      "surface_type": "floor",
+      "distance_cm": 40,
+      "lighting": "led",
+      "has_clot": false
+    },
+    "floor-and-cloth_600mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-05_at_5.54.34_PM.jpeg": {
+      "volume_ml": 600,
+      "surface_type": "floor",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "floor-and-cloth_600mL_40cm_daylight_clot-no_WhatsApp_Image_2026-04-05_at_5.54.34_PM__3_.jpeg": {
+      "volume_ml": 600,
+      "surface_type": "floor",
+      "distance_cm": 40,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "floor-and-cloth_700mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-06_at_8.19.44_AM.jpeg": {
+      "volume_ml": 700,
+      "surface_type": "floor",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "floor-and-cloth_700mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-06_at_8.19.44_AM__1_.jpeg": {
+      "volume_ml": 700,
+      "surface_type": "floor",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "floor-and-cloth_700mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-06_at_8.21.49_AM.jpeg": {
+      "volume_ml": 700,
+      "surface_type": "floor",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "floor-and-cloth_800mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-06_at_8.19.45_AM.jpeg": {
+      "volume_ml": 800,
+      "surface_type": "floor",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "floor-and-cloth_800mL_20cm_led_clot-no_WhatsApp_Image_2026-04-06_at_8.19.45_AM__1_.jpeg": {
+      "volume_ml": 800,
+      "surface_type": "floor",
+      "distance_cm": 20,
+      "lighting": "led",
+      "has_clot": false
+    },
+    "floor-and-cloth_800mL_40cm_led_clot-no_WhatsApp_Image_2026-04-06_at_8.19.46_AM.jpeg": {
+      "volume_ml": 800,
+      "surface_type": "floor",
+      "distance_cm": 40,
+      "lighting": "led",
+      "has_clot": false
+    },
+    "floor-and-cloth_900mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-06_at_8.19.46_AM__1_.jpeg": {
+      "volume_ml": 900,
+      "surface_type": "floor",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "floor-and-cloth_900mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-06_at_8.21.50_AM.jpeg": {
+      "volume_ml": 900,
+      "surface_type": "floor",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "floor_1000mL_40cm_daylight_clot-yes_WhatsApp_Image_2026-04-06_at_8.19.55_AM.jpeg": {
+      "volume_ml": 1000,
+      "surface_type": "floor",
+      "distance_cm": 40,
+      "lighting": "daylight",
+      "has_clot": true
+    },
+    "floor_500mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-06_at_8.21.07_AM.jpeg": {
+      "volume_ml": 500,
+      "surface_type": "floor",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "floor_500mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-06_at_8.21.54_AM.jpeg": {
+      "volume_ml": 500,
+      "surface_type": "floor",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "floor_500mL_40cm_daylight_clot-no_WhatsApp_Image_2026-04-05_at_5.40.01_PM.jpeg": {
+      "volume_ml": 500,
+      "surface_type": "floor",
+      "distance_cm": 40,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "floor_500mL_40cm_daylight_clot-yes_WhatsApp_Image_2026-04-05_at_5.40.01_PM__2_.jpeg": {
+      "volume_ml": 500,
+      "surface_type": "floor",
+      "distance_cm": 40,
+      "lighting": "daylight",
+      "has_clot": true
+    },
+    "floor_550mL_40cm_daylight_clot-no_WhatsApp_Image_2026-04-05_at_5.40.02_PM.jpeg": {
+      "volume_ml": 550,
+      "surface_type": "floor",
+      "distance_cm": 40,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "pad-and-container_400mL_40cm_daylight_clot-no_WhatsApp_Image_2026-04-06_at_8.19.12_AM__2_.jpeg": {
+      "volume_ml": 400,
+      "surface_type": "pad",
+      "distance_cm": 40,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "pad-and-floor_500mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-06_at_8.19.11_AM.jpeg": {
+      "volume_ml": 500,
+      "surface_type": "pad",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "pad_100mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-05_at_5.54.37_PM.jpeg": {
+      "volume_ml": 100,
+      "surface_type": "pad",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "pad_100mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-06_at_8.19.33_AM.jpeg": {
+      "volume_ml": 100,
+      "surface_type": "pad",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "pad_100mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-06_at_8.21.42_AM.jpeg": {
+      "volume_ml": 100,
+      "surface_type": "pad",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "pad_100mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-10_at_12.16.44_PM__1_.jpeg": {
+      "volume_ml": 100,
+      "surface_type": "pad",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "pad_100mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-10_at_12.16.47_PM.jpeg": {
+      "volume_ml": 100,
+      "surface_type": "pad",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "pad_100mL_20cm_led_clot-no_WhatsApp_Image_2026-04-10_at_12.16.50_PM.jpeg": {
+      "volume_ml": 100,
+      "surface_type": "pad",
+      "distance_cm": 20,
+      "lighting": "led",
+      "has_clot": false
+    },
+    "pad_100mL_20cm_led_clot-no_WhatsApp_Image_2026-04-10_at_12.16.55_PM.jpeg": {
+      "volume_ml": 100,
+      "surface_type": "pad",
+      "distance_cm": 20,
+      "lighting": "led",
+      "has_clot": false
+    },
+    "pad_100mL_20cm_led_clot-no_WhatsApp_Image_2026-04-10_at_12.16.56_PM.jpeg": {
+      "volume_ml": 100,
+      "surface_type": "pad",
+      "distance_cm": 20,
+      "lighting": "led",
+      "has_clot": false
+    },
+    "pad_100mL_40cm_daylight_clot-no_WhatsApp_Image_2026-04-10_at_12.16.51_PM.jpeg": {
+      "volume_ml": 100,
+      "surface_type": "pad",
+      "distance_cm": 40,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "pad_100mL_40cm_daylight_clot-no_WhatsApp_Image_2026-04-10_at_12.16.52_PM.jpeg": {
+      "volume_ml": 100,
+      "surface_type": "pad",
+      "distance_cm": 40,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "pad_100mL_40cm_daylight_clot-no_WhatsApp_Image_2026-04-10_at_12.16.53_PM.jpeg": {
+      "volume_ml": 100,
+      "surface_type": "pad",
+      "distance_cm": 40,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "pad_100mL_40cm_led_clot-no_WhatsApp_Image_2026-04-10_at_12.16.54_PM.jpeg": {
+      "volume_ml": 100,
+      "surface_type": "pad",
+      "distance_cm": 40,
+      "lighting": "led",
+      "has_clot": false
+    },
+    "pad_100mL_40cm_led_clot-no_WhatsApp_Image_2026-04-10_at_12.16.54_PM__1_.jpeg": {
+      "volume_ml": 100,
+      "surface_type": "pad",
+      "distance_cm": 40,
+      "lighting": "led",
+      "has_clot": false
+    },
+    "pad_100mL_40cm_led_clot-no_WhatsApp_Image_2026-04-10_at_12.16.59_PM.jpeg": {
+      "volume_ml": 100,
+      "surface_type": "pad",
+      "distance_cm": 40,
+      "lighting": "led",
+      "has_clot": false
+    },
+    "pad_100mL_40cm_led_clot-no_WhatsApp_Image_2026-04-10_at_12.17.00_PM.jpeg": {
+      "volume_ml": 100,
+      "surface_type": "pad",
+      "distance_cm": 40,
+      "lighting": "led",
+      "has_clot": false
+    },
+    "pad_150mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-06_at_8.21.43_AM.jpeg": {
+      "volume_ml": 150,
+      "surface_type": "pad",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "pad_200mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-06_at_8.19.12_AM__1_.jpeg": {
+      "volume_ml": 200,
+      "surface_type": "pad",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "pad_200mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-06_at_8.19.34_AM__2_.jpeg": {
+      "volume_ml": 200,
+      "surface_type": "pad",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "pad_200mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-06_at_8.19.35_AM.jpeg": {
+      "volume_ml": 200,
+      "surface_type": "pad",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "pad_200mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-10_at_1.03.33_PM__2_.jpeg": {
+      "volume_ml": 200,
+      "surface_type": "pad",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "pad_200mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-10_at_1.03.35_PM__2_.jpeg": {
+      "volume_ml": 200,
+      "surface_type": "pad",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "pad_200mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-10_at_12.16.30_PM__4_.jpeg": {
+      "volume_ml": 200,
+      "surface_type": "pad",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "pad_200mL_20cm_led_clot-no_WhatsApp_Image_2026-04-10_at_1.03.36_PM__2_.jpeg": {
+      "volume_ml": 200,
+      "surface_type": "pad",
+      "distance_cm": 20,
+      "lighting": "led",
+      "has_clot": false
+    },
+    "pad_200mL_20cm_led_clot-no_WhatsApp_Image_2026-04-10_at_1.03.37_PM.jpeg": {
+      "volume_ml": 200,
+      "surface_type": "pad",
+      "distance_cm": 20,
+      "lighting": "led",
+      "has_clot": false
+    },
+    "pad_200mL_40cm_daylight_clot-no_WhatsApp_Image_2026-04-06_at_8.21.44_AM.jpeg": {
+      "volume_ml": 200,
+      "surface_type": "pad",
+      "distance_cm": 40,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "pad_200mL_40cm_daylight_clot-no_WhatsApp_Image_2026-04-06_at_8.21.45_AM.jpeg": {
+      "volume_ml": 200,
+      "surface_type": "pad",
+      "distance_cm": 40,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "pad_200mL_40cm_daylight_clot-no_WhatsApp_Image_2026-04-10_at_1.03.34_PM__2_.jpeg": {
+      "volume_ml": 200,
+      "surface_type": "pad",
+      "distance_cm": 40,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "pad_200mL_40cm_daylight_clot-no_WhatsApp_Image_2026-04-10_at_1.03.35_PM.jpeg": {
+      "volume_ml": 200,
+      "surface_type": "pad",
+      "distance_cm": 40,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "pad_200mL_40cm_daylight_clot-no_WhatsApp_Image_2026-04-10_at_1.03.35_PM__1_.jpeg": {
+      "volume_ml": 200,
+      "surface_type": "pad",
+      "distance_cm": 40,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "pad_200mL_40cm_led_clot-no_WhatsApp_Image_2026-04-10_at_1.03.36_PM.jpeg": {
+      "volume_ml": 200,
+      "surface_type": "pad",
+      "distance_cm": 40,
+      "lighting": "led",
+      "has_clot": false
+    },
+    "pad_200mL_40cm_led_clot-no_WhatsApp_Image_2026-04-10_at_1.03.36_PM__1_.jpeg": {
+      "volume_ml": 200,
+      "surface_type": "pad",
+      "distance_cm": 40,
+      "lighting": "led",
+      "has_clot": false
+    },
+    "pad_200mL_40cm_led_clot-no_WhatsApp_Image_2026-04-10_at_1.03.38_PM__1_.jpeg": {
+      "volume_ml": 200,
+      "surface_type": "pad",
+      "distance_cm": 40,
+      "lighting": "led",
+      "has_clot": false
+    },
+    "pad_300mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-06_at_8.19.37_AM.jpeg": {
+      "volume_ml": 300,
+      "surface_type": "pad",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "pad_300mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-06_at_8.19.37_AM__1_.jpeg": {
+      "volume_ml": 300,
+      "surface_type": "pad",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "pad_300mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-10_at_1.03.37_PM__1_.jpeg": {
+      "volume_ml": 300,
+      "surface_type": "pad",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "pad_3mL_40cm_daylight_clot-no_WhatsApp_Image_2026-04-06_at_8.19.34_AM.jpeg": {
+      "volume_ml": 3,
+      "surface_type": "pad",
+      "distance_cm": 40,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "pad_400mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-05_at_5.54.36_PM.jpeg": {
+      "volume_ml": 400,
+      "surface_type": "pad",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "pad_400mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-06_at_8.19.38_AM.jpeg": {
+      "volume_ml": 400,
+      "surface_type": "pad",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "pad_400mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-06_at_8.21.47_AM.jpeg": {
+      "volume_ml": 400,
+      "surface_type": "pad",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "pad_400mL_20cm_daylight_clot-yes_WhatsApp_Image_2026-04-06_at_8.19.39_AM.jpeg": {
+      "volume_ml": 400,
+      "surface_type": "pad",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": true
+    },
+    "pad_500mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-06_at_8.19.40_AM.jpeg": {
+      "volume_ml": 500,
+      "surface_type": "pad",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "pad_500mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-06_at_8.19.40_AM__1_.jpeg": {
+      "volume_ml": 500,
+      "surface_type": "pad",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "pad_500mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-10_at_12.16.57_PM.jpeg": {
+      "volume_ml": 500,
+      "surface_type": "pad",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "pad_500mL_40cm_led_clot-no_WhatsApp_Image_2026-04-06_at_8.19.41_AM.jpeg": {
+      "volume_ml": 500,
+      "surface_type": "pad",
+      "distance_cm": 40,
+      "lighting": "led",
+      "has_clot": false
+    },
+    "pad_50mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-05_at_5.54.38_PM.jpeg": {
+      "volume_ml": 50,
+      "surface_type": "pad",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "pad_50mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-06_at_8.21.41_AM.jpeg": {
+      "volume_ml": 50,
+      "surface_type": "pad",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "pad_50mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-10_at_12.16.31_PM__2_.jpeg": {
+      "volume_ml": 50,
+      "surface_type": "pad",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "pad_50mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-10_at_12.16.32_PM__4_.jpeg": {
+      "volume_ml": 50,
+      "surface_type": "pad",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "pad_50mL_20cm_led_clot-no_WhatsApp_Image_2026-04-10_at_12.16.31_PM__3_.jpeg": {
+      "volume_ml": 50,
+      "surface_type": "pad",
+      "distance_cm": 20,
+      "lighting": "led",
+      "has_clot": false
+    },
+    "pad_50mL_20cm_led_clot-no_WhatsApp_Image_2026-04-10_at_12.16.32_PM__1_.jpeg": {
+      "volume_ml": 50,
+      "surface_type": "pad",
+      "distance_cm": 20,
+      "lighting": "led",
+      "has_clot": false
+    },
+    "pad_50mL_20cm_led_clot-no_WhatsApp_Image_2026-04-10_at_12.16.32_PM__2_.jpeg": {
+      "volume_ml": 50,
+      "surface_type": "pad",
+      "distance_cm": 20,
+      "lighting": "led",
+      "has_clot": false
+    },
+    "pad_50mL_20cm_led_clot-no_WhatsApp_Image_2026-04-10_at_12.16.32_PM__3_.jpeg": {
+      "volume_ml": 50,
+      "surface_type": "pad",
+      "distance_cm": 20,
+      "lighting": "led",
+      "has_clot": false
+    },
+    "pad_50mL_40cm_daylight_clot-no_WhatsApp_Image_2026-04-10_at_12.16.33_PM__4_.jpeg": {
+      "volume_ml": 50,
+      "surface_type": "pad",
+      "distance_cm": 40,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "pad_50mL_40cm_daylight_clot-no_WhatsApp_Image_2026-04-10_at_12.16.34_PM.jpeg": {
+      "volume_ml": 50,
+      "surface_type": "pad",
+      "distance_cm": 40,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "pad_50mL_40cm_daylight_clot-no_WhatsApp_Image_2026-04-10_at_12.16.34_PM__1_.jpeg": {
+      "volume_ml": 50,
+      "surface_type": "pad",
+      "distance_cm": 40,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "pad_50mL_40cm_daylight_clot-no_WhatsApp_Image_2026-04-10_at_12.16.34_PM__2_.jpeg": {
+      "volume_ml": 50,
+      "surface_type": "pad",
+      "distance_cm": 40,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "pad_50mL_40cm_led_clot-no_WhatsApp_Image_2026-04-10_at_12.16.33_PM.jpeg": {
+      "volume_ml": 50,
+      "surface_type": "pad",
+      "distance_cm": 40,
+      "lighting": "led",
+      "has_clot": false
+    },
+    "pad_50mL_40cm_led_clot-no_WhatsApp_Image_2026-04-10_at_12.16.33_PM__1_.jpeg": {
+      "volume_ml": 50,
+      "surface_type": "pad",
+      "distance_cm": 40,
+      "lighting": "led",
+      "has_clot": false
+    },
+    "pad_50mL_40cm_led_clot-no_WhatsApp_Image_2026-04-10_at_12.16.33_PM__2_.jpeg": {
+      "volume_ml": 50,
+      "surface_type": "pad",
+      "distance_cm": 40,
+      "lighting": "led",
+      "has_clot": false
+    },
+    "pad_50mL_40cm_led_clot-no_WhatsApp_Image_2026-04-10_at_12.16.33_PM__3_.jpeg": {
+      "volume_ml": 50,
+      "surface_type": "pad",
+      "distance_cm": 40,
+      "lighting": "led",
+      "has_clot": false
+    },
+    "pad_80mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-05_at_5.54.37_PM__1_.jpeg": {
+      "volume_ml": 80,
+      "surface_type": "pad",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "pad_80mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-06_at_8.21.41_AM__1_.jpeg": {
+      "volume_ml": 80,
+      "surface_type": "pad",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "pad_80mL_40cm_daylight_clot-no_WhatsApp_Image_2026-04-06_at_8.19.32_AM.jpeg": {
+      "volume_ml": 80,
+      "surface_type": "pad",
+      "distance_cm": 40,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "pampers_300mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-10_at_1.03.37_PM__2_.jpeg": {
+      "volume_ml": 300,
+      "surface_type": "pampers",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "pampers_300mL_20cm_daylight_clot-no_WhatsApp_Image_2026-04-10_at_1.03.38_PM.jpeg": {
+      "volume_ml": 300,
+      "surface_type": "pampers",
+      "distance_cm": 20,
+      "lighting": "daylight",
+      "has_clot": false
+    },
+    "pampers_300mL_20cm_led_clot-no_WhatsApp_Image_2026-04-10_at_1.03.38_PM__2_.jpeg": {
+      "volume_ml": 300,
+      "surface_type": "pampers",
+      "distance_cm": 20,
+      "lighting": "led",
+      "has_clot": false
+    },
+    "pampers_300mL_20cm_led_clot-no_WhatsApp_Image_2026-04-10_at_1.03.39_PM.jpeg": {
+      "volume_ml": 300,
+      "surface_type": "pampers",
+      "distance_cm": 20,
+      "lighting": "led",
+      "has_clot": false
+    },
+    "pampers_300mL_20cm_led_clot-no_WhatsApp_Image_2026-04-10_at_1.03.39_PM__1_.jpeg": {
+      "volume_ml": 300,
+      "surface_type": "pampers",
+      "distance_cm": 20,
+      "lighting": "led",
+      "has_clot": false
+    },
+    "pampers_300mL_20cm_led_clot-no_WhatsApp_Image_2026-04-10_at_1.03.39_PM__2_.jpeg": {
+      "volume_ml": 300,
+      "surface_type": "pampers",
+      "distance_cm": 20,
+      "lighting": "led",
+      "has_clot": false
+    },
+    "pampers_300mL_20cm_led_clot-no_WhatsApp_Image_2026-04-10_at_1.03.39_PM__3_.jpeg": {
+      "volume_ml": 300,
+      "surface_type": "pampers",
+      "distance_cm": 20,
+      "lighting": "led",
+      "has_clot": false
+    }
+  }
+}

@@ -22,7 +22,12 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from scripts.dataset import get_transforms
 
 DEVICE = 'cuda' if torch.cuda.is_available() else 'cpu'
-SURFACE_MAP = {'pad': 0, 'gauze': 1, 'sheet': 2, 'drape': 3, 'other': 4}
+SURFACE_MAP = {
+    'bowl': 0, 'container': 1, 'pad': 2, 'pampers': 3, 'drape': 4,
+    'floor': 5, 'cloth': 6, 'bedsheet': 7, 'towel': 8, 'gauze': 9,
+    'sheet': 10, 'floor-and-cloth': 11, 'cloth-and-floor': 12,
+    'pad-and-container': 13, 'pad-and-floor': 14, 'other': 15
+}
 
 
 class BloodLossRegressor(nn.Module):
@@ -33,7 +38,7 @@ class BloodLossRegressor(nn.Module):
         backbone = models.mobilenet_v3_small(weights='IMAGENET1K_V1')
         self.features = backbone.features
         self.head = nn.Sequential(
-            nn.Linear(576 + 5 + 3, 256),
+            nn.Linear(576 + 16 + 3, 256),
             nn.Hardswish(),
             nn.Dropout(0.3),
             nn.Linear(256, 64),
@@ -132,8 +137,8 @@ def main():
                 masked, size=224, mode='bilinear', align_corners=False)
 
             # Surface type
-            s_idx = SURFACE_MAP.get(info.get('surface_type', 'other'), 4)
-            s_oh = torch.zeros(1, 5, device=DEVICE)
+            s_idx = SURFACE_MAP.get(info.get('surface_type', 'other'), 15)  # Default to 'other'
+            s_oh = torch.zeros(1, 16, device=DEVICE)  # Updated to 16 surface types
             s_oh[0, s_idx] = 1.0
             extras = torch.zeros(1, 3, device=DEVICE)
 

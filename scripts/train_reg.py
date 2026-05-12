@@ -62,9 +62,9 @@ class BloodLossRegressor(nn.Module):
         backbone = models.mobilenet_v3_small(weights='IMAGENET1K_V1')
         self.features = backbone.features
         # 576 features from MobileNetV3-Small backbone
-        # + 5 surface one-hot + 3 extra features = 584
+        # + 16 surface one-hot + 3 extra features = 595
         self.head = nn.Sequential(
-            nn.Linear(576 + 5 + 3, 256),
+            nn.Linear(576 + 16 + 3, 256),
             nn.Hardswish(),
             nn.Dropout(0.3),
             nn.Linear(256, 64),
@@ -76,7 +76,7 @@ class BloodLossRegressor(nn.Module):
         x = self.features(image)
         x = nn.functional.adaptive_avg_pool2d(x, 1)
         x = x.flatten(1)  # (B, 576)
-        x = torch.cat([x, surface_onehot, extras], dim=1)  # (B, 584)
+        x = torch.cat([x, surface_onehot, extras], dim=1)  # (B, 595)
         return self.head(x)
 
 
@@ -138,18 +138,15 @@ def train():
             images = batch['image'].to(DEVICE)
             log_volumes = batch['log_volume'].to(DEVICE)
             surface_oh = batch['surface_onehot'].to(DEVICE)
+            gt_masks = batch['mask'].to(DEVICE)
+            extras = batch['extras'].to(DEVICE)
 
-            # Apply segmentation mask if model available
-            if seg_model is not None:
-                with torch.no_grad():
-                    mask = (seg_model(images) > 0.5).float()
-                    images = images * mask
+            # Apply ground truth mask
+            images = images * gt_masks
 
             # Resize to 224 for MobileNetV3
             images = nn.functional.interpolate(images, size=224, mode='bilinear',
                                                align_corners=False)
-
-            extras = torch.zeros(images.size(0), 3, device=DEVICE)
             pred_log = model(images, surface_oh, extras).squeeze(-1)
 
             loss = criterion(pred_log, log_volumes)
@@ -170,14 +167,14 @@ def train():
                 images = batch['image'].to(DEVICE)
                 true_ml = batch['volume_ml'].numpy()
                 surface_oh = batch['surface_onehot'].to(DEVICE)
+                gt_masks = batch['mask'].to(DEVICE)
+                extras = batch['extras'].to(DEVICE)
 
-                if seg_model is not None:
-                    mask = (seg_model(images) > 0.5).float()
-                    images = images * mask
+                # Apply ground truth mask
+                images = images * gt_masks
 
                 images = nn.functional.interpolate(images, size=224, mode='bilinear',
                                                    align_corners=False)
-                extras = torch.zeros(images.size(0), 3, device=DEVICE)
                 pred_log = model(images, surface_oh, extras).squeeze(-1)
                 pred_ml = torch.exp(pred_log).cpu().numpy()
 

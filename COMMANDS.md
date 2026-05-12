@@ -10,16 +10,18 @@ Must be run every time you open a new terminal.
 - **Mac/Linux:** `source venv/bin/activate`
 
 ### 2. Labeling & Data Prep
-- **duplicate data removal** `python  scripts/deduplicate.py`
+Always follow this sequence when adding new data:
 
-- **Interactive Labeling:** `python scripts/label_images.py`
-  - Renames and organizes your raw images from `blood-images/` into `dataset/synthetic_train/`.
-- **Audit Data:** `python scripts/audit_images.py`
-  - Checks if all images in `dataset/real_test/` are correctly labeled in `labels.json`.
-- **Generate Masks:** `python scripts/generate_masks.py`
-  - Automatically creates black-and-white segmentation masks for your training data.
-- **Build Master Labels:** `python scripts/build_labels.py`
-  - Compiles the final `synthetic_labels.json` file from your renamed filenames.
+1. **Remove Duplicates:** `python scripts/deduplicate.py`
+   - Cleans up identical images before processing.
+2. **Interactive Labeling:** `python scripts/label_images.py`
+   - Renames and organizes your raw images from `blood-images/` into `dataset/synthetic_train/`.
+3. **Generate Masks:** `python scripts/generate_masks.py`
+   - Automatically creates black-and-white segmentation masks for your training data.
+4. **Build Master Labels:** `python scripts/build_labels.py`
+   - Compiles the final `synthetic_labels.json` file from your renamed filenames and extracts important metadata.
+5. **Audit Data:** `python scripts/audit_images.py`
+   - Checks if all images are correctly labeled and verifies the dataset distributions.
 
 ## 🧠 Training & Evaluation
 
@@ -43,5 +45,5 @@ Must be run every time you open a new terminal.
   - Output: `models/blood_loss_seg.tflite` & `models/blood_loss_reg.tflite`
 
 ## 🌐 MVP Prototype
-- **Run Web App:** `cd mvp_app && python app.py`
+- **Run Web App:** `python mvp_app/app.py`
   - Open: `http://localhost:5050`

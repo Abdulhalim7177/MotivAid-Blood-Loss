@@ -13,7 +13,7 @@ import os
 import re
 import json
 
-SURFACES = ['pad', 'gauze', 'sheet', 'drape', 'other']
+SURFACES = ['bowl', 'container', 'pad', 'pampers', 'drape', 'floor', 'cloth', 'bedsheet', 'towel', 'gauze', 'sheet', 'floor-and-cloth', 'cloth-and-floor', 'pad-and-container', 'pad-and-floor', 'other']
 DIRS = {
     'synthetic_train': os.path.join('dataset', 'synthetic_train'),
     'synthetic_val': os.path.join('dataset', 'synthetic_val'),
@@ -25,14 +25,12 @@ LABELS_FILE = 'labels.json'
 
 def parse_filename(fname):
     """
-    Parse volume and surface type from filename.
-    Expected format: {surface}_{volume}mL_{index}.ext
-    Examples: pad_050mL_001.jpg, gauze_200mL_003.png
+    Parse volume, surface type, and metadata from filename.
     """
     # Try to extract volume
     m = re.search(r'(\d+)\s*mL', fname, re.IGNORECASE)
     if not m:
-        return None, None
+        return None, None, None
 
     volume = int(m.group(1))
 
@@ -44,7 +42,29 @@ def parse_filename(fname):
             surface = s
             break
 
-    return volume, surface
+    # Extract metadata
+    # Distance
+    dist_m = re.search(r'(\d+)\s*cm', fname, re.IGNORECASE)
+    distance = int(dist_m.group(1)) if dist_m else 40  # default 40cm
+
+    # Lighting
+    lighting = 'daylight'
+    if 'led' in fname_lower:
+        lighting = 'led'
+    elif 'dim' in fname_lower:
+        lighting = 'dim'
+
+    # Clot
+    clot_m = re.search(r'clot-(yes|no)', fname_lower)
+    has_clot = (clot_m.group(1) == 'yes') if clot_m else False
+
+    metadata = {
+        'distance_cm': distance,
+        'lighting': lighting,
+        'has_clot': has_clot
+    }
+
+    return volume, surface, metadata
 
 
 def main():
@@ -72,11 +92,16 @@ def main():
         failed = 0
 
         for fname in files:
-            volume, surface = parse_filename(fname)
+            volume, surface, metadata = parse_filename(fname)
             if volume is not None:
+                if volume > 3000:
+                    print(f"    WARNING: skipping outlier {fname} ({volume} mL > 3000mL)")
+                    failed += 1
+                    continue
                 split_labels[fname] = {
                     'volume_ml': volume,
-                    'surface_type': surface
+                    'surface_type': surface,
+                    **metadata
                 }
                 parsed += 1
             else:

@@ -14,8 +14,10 @@ The guide is organised into five parts:
 4. Converting for mobile — making the model work offline on Android/iOS
 5. MVP prototype — a working Python web app you can demo before app integration
 
-TIP:  Every time you see a grey box like this one, it is a command or code you can copy and run directly. Every time you see a CHECKPOINT box, stop and verify that the step worked before moving on.
-NOTE:  This guide assumes you are working on a Windows, Mac, or Linux laptop. For GPU-accelerated training (faster), you will use Google Colab, which is free and runs in your browser. No powerful hardware required on your local machine.
+TIP:  Every time you see a grey box like this one, it is a command or code you can copy and run directly. Every time you see a CHECKPOINT box, stop and verify that the step worked before moving on.
+
+NOTE:  This guide assumes you are working on a Windows, Mac, or Linux laptop. For GPU-accelerated training (faster), you will use Google Colab, which is free and runs in your browser. No powerful hardware required on your local machine.
+
 
 Part 1 — Environment Setup
 Before writing any code, you need to install the right tools. Think of this like setting up a kitchen before cooking — you need the right equipment in place first.
@@ -25,10 +27,13 @@ Python is the programming language used to build the AI model. You need version 
 
 On Windows: Go to python.org, download the installer, and run it. On the first screen, tick the box that says Add Python to PATH before clicking Install.
 On Mac: Open Terminal and type:
-brew install python@3.11On Linux (Ubuntu): Open Terminal and type:
+brew install python@3.11
+On Linux (Ubuntu): Open Terminal and type:
 sudo apt update
-sudo apt install python3.11 python3.11-pip python3.11-venv
-CHECKPOINT:  Open a new terminal window and type: python --version You should see something like: Python 3.11.x
+sudo apt install python3.11 python3.11-pip python3.11-venv
+
+CHECKPOINT:  Open a new terminal window and type: python --version You should see something like: Python 3.11.x
+
 Step 1.2 — Install VS Code (code editor)
 VS Code is the editor you will use to write and run code. It is free.
 6. Go to code.visualstudio.com and download VS Code for your operating system
@@ -45,7 +50,8 @@ cd ~/motivaid-bloodloss
 
 # On Windows (in Command Prompt):
 mkdir C:\motivaid-bloodloss
-cd C:\motivaid-bloodloss
+cd C:\motivaid-bloodloss
+
 Step 1.4 — Create a Python virtual environment
 A virtual environment is an isolated container for your project's dependencies. This prevents conflicts between different projects on your computer. Think of it as a separate toolbox just for this project.
 # Navigate to your project folder first, then:
@@ -56,7 +62,8 @@ python -m venv venv
 source venv/bin/activate
 
 # On Windows:
-venv\Scripts\activateAfter activating, your terminal prompt will show (venv) at the start. This tells you the environment is active. You must activate it every time you open a new terminal to work on this project.
+venv\Scripts\activate
+After activating, your terminal prompt will show (venv) at the start. This tells you the environment is active. You must activate it every time you open a new terminal to work on this project.
 
 Step 1.5 — Install Python packages
 These are the libraries your code will use. Copy this entire block and paste it into your terminal.
@@ -70,8 +77,11 @@ pip install scikit-learn
 pip install flask
 pip install tqdm
 pip install wandb
-pip install onnx onnxruntimeNOTE:  The first line installs PyTorch for CPU. This is fine for running code locally but too slow for training. Training will be done in Google Colab (Step 3.1) which has free GPU access. You are installing the CPU version here just to be able to run and test scripts locally.
-CHECKPOINT:  Run this command: python -c "import torch; print(torch.__version__)" You should see a version number like 2.2.0. If you see an error, the installation failed — re-run the pip install command.
+pip install onnx onnxruntime
+NOTE:  The first line installs PyTorch for CPU. This is fine for running code locally but too slow for training. Training will be done in Google Colab (Step 3.1) which has free GPU access. You are installing the CPU version here just to be able to run and test scripts locally.
+
+CHECKPOINT:  Run this command: python -c "import torch; print(torch.__version__)" You should see a version number like 2.2.0. If you see an error, the installation failed — re-run the pip install command.
+
 Step 1.6 — Set up your project folder structure
 Create the following folder structure inside your project. This keeps everything organised.
 motivaid-bloodloss/
@@ -90,10 +100,12 @@ motivaid-bloodloss/
 ?   ??? export_onnx.py
 ??? models/             ? saved model files (.pt, .onnx, .tflite)
 ??? mvp_app/            ? the prototype web app
-??? labels.json         ? all image labelsCreate all these folders now:
+??? labels.json         ? all image labels
+Create all these folders now:
 # Mac/Linux:
 mkdir -p dataset/real_test dataset/synthetic_train dataset/synthetic_val dataset/masks
-mkdir -p scripts models mvp_app
+mkdir -p scripts models mvp_app
+
 
 
 Part 2 — Data Preparation
@@ -116,7 +128,8 @@ Now create the labels file. Open a new file called labels.json in your project r
       "notes": "hospital cotton sheet, fluorescent"
     }
   }
-}Surface type values to use: use exactly these strings: pad, gauze, sheet, drape, other
+}
+Surface type values to use: use exactly these strings: pad, gauze, sheet, drape, other
 
 Step 2.2 — Audit your real images
 Create the file scripts/audit_images.py and paste in the following code. This script reads all your real images and produces a summary so you can spot problems.
@@ -167,9 +180,12 @@ if low_res:
     for r in low_res:
         print(f'  {r["filename"]} ({r["resolution"]})')
 else:
-    print('All images meet minimum resolution (good).')Run it:
-python scripts/audit_images.py
-CHECKPOINT:  You should see a count of images, surface type breakdown, and any resolution warnings. Fix any MISSING labels in labels.json before continuing.
+    print('All images meet minimum resolution (good).')
+Run it:
+python scripts/audit_images.py
+
+CHECKPOINT:  You should see a count of images, surface type breakdown, and any resolution warnings. Fix any MISSING labels in labels.json before continuing.
+
 Step 2.3 — Prepare the blood analog for synthetic data
 For training, you need photographs of simulated blood stains on all 5 surface types. This is done by applying a blood analog solution — a mixture that looks like blood on camera.
 
@@ -177,13 +193,33 @@ Blood analog recipe: Mix 250 mL of warm water, 2 tablespoons of corn syrup, and 
 
 For each surface type, photograph stains of these exact volumes:
 
-SurfaceVolume rangeSamples neededSanitary pad5, 10, 25, 50, 100, 200, 400 mL40 samples (5 per volume)Gauze (4x4)2, 5, 10, 15, 20 mL25 samples (5 per volume)Hospital sheet10, 25, 50, 100, 200, 400 mL30 samples (5 per volume)Surgical drape10, 25, 50, 100, 200, 400, 600 mL35 samples (5 per volume)Other/mixed25, 100, 300 mL15 samples
+Surface
+Volume range
+Samples needed
+Sanitary pad
+5, 10, 25, 50, 100, 200, 400 mL
+40 samples (5 per volume)
+Gauze (4x4)
+2, 5, 10, 15, 20 mL
+25 samples (5 per volume)
+Hospital sheet
+10, 25, 50, 100, 200, 400 mL
+30 samples (5 per volume)
+Surgical drape
+10, 25, 50, 100, 200, 400, 600 mL
+35 samples (5 per volume)
+Other/mixed
+25, 100, 300 mL
+15 samples
+
 For each sample, take 6 photographs: 2 distances (20 cm, 40 cm) x 3 lighting conditions (daylight, fluorescent, LED). Name files consistently:
 pad_050ml_d20_daylight_001.jpg
 pad_050ml_d40_fluorescent_001.jpg
-drape_100ml_d20_led_001.jpgSave all synthetic training images in dataset/synthetic_train/.
+drape_100ml_d20_led_001.jpg
+Save all synthetic training images in dataset/synthetic_train/.
 
-NOTE:  Surgical drapes are often blue or green. Blood on a blue drape looks different from blood on white fabric. Photograph drapes carefully and verify your analog solution colour matches your real drape images before photographing many samples.
+NOTE:  Surgical drapes are often blue or green. Blood on a blue drape looks different from blood on white fabric. Photograph drapes carefully and verify your analog solution colour matches your real drape images before photographing many samples.
+
 Step 2.4 — Generate segmentation masks
 The segmentation model needs to know which pixels are blood-stained. We generate an approximate mask using colour detection, then you manually fix any obvious errors.
 Create scripts/generate_masks.py:
@@ -226,8 +262,11 @@ for fname in os.listdir(IMAGE_DIR):
     mask_name = os.path.splitext(fname)[0] + '_mask.png'
     cv2.imwrite(os.path.join(MASK_DIR, mask_name), mask)
 
-print(f'Masks generated for {len(os.listdir(MASK_DIR))} images.')python scripts/generate_masks.py
-TIP:  After generating masks, spot-check 10 of them by opening the mask PNG alongside the original image. The mask should be white where the stain is and black everywhere else. If the mask is capturing too much or too little, adjust the HSV ranges in the script.
+print(f'Masks generated for {len(os.listdir(MASK_DIR))} images.')
+python scripts/generate_masks.py
+
+TIP:  After generating masks, spot-check 10 of them by opening the mask PNG alongside the original image. The mask should be white where the stain is and black everywhere else. If the mask is capturing too much or too little, adjust the HSV ranges in the script.
+
 Step 2.5 — Create the synthetic labels file
 Write a small script to auto-generate labels from your filenames (since you named them with the volume embedded):
 # scripts/build_labels.py
@@ -256,13 +295,17 @@ for fname in os.listdir(IMAGE_DIR):
 
 with open('dataset/synthetic_labels.json', 'w') as f:
     json.dump(output, f, indent=2)
-print(f'Labeled {len(output)} synthetic images.')python scripts/build_labels.py
-CHECKPOINT:  Open dataset/synthetic_labels.json and verify a few entries look correct. Each entry should have a volume_ml and surface_type field.
+print(f'Labeled {len(output)} synthetic images.')
+python scripts/build_labels.py
+
+CHECKPOINT:  Open dataset/synthetic_labels.json and verify a few entries look correct. Each entry should have a volume_ml and surface_type field.
+
 
 Part 3 — Building and Training the Model
 This is the core AI development work. You will train two models: one to find the stain in the image, and one to estimate how much blood it represents.
 
-NOTE:  Training is done in Google Colab, not on your local machine. Google Colab gives you free access to a GPU which makes training ~20x faster. The steps below will tell you when to switch to Colab.
+NOTE:  Training is done in Google Colab, not on your local machine. Google Colab gives you free access to a GPU which makes training ~20x faster. The steps below will tell you when to switch to Colab.
+
 Step 3.1 — Set up Google Colab
 11. Go to colab.research.google.com and sign in with your Google account
 12. Click New notebook
@@ -275,8 +318,10 @@ drive.mount('/content/drive')
 
 # Then navigate to your project folder:
 import os
-os.chdir('/content/drive/MyDrive/motivaid-bloodloss')Install the required packages at the top of your Colab notebook:
-!pip install segmentation-models-pytorch albumentations wandb -q
+os.chdir('/content/drive/MyDrive/motivaid-bloodloss')
+Install the required packages at the top of your Colab notebook:
+!pip install segmentation-models-pytorch albumentations wandb -q
+
 Step 3.2 — Create the dataset loader (scripts/dataset.py)
 This file teaches Python how to read your images and labels. Create it locally (and upload to Drive).
 # scripts/dataset.py
@@ -348,7 +393,8 @@ class BloodLossDataset(Dataset):
             'log_vol': torch.tensor(np.log(volume + 1e-6), dtype=torch.float32),
             'surface': torch.tensor(surface, dtype=torch.long),
             'volume':  torch.tensor(volume, dtype=torch.float32),
-        }
+        }
+
 Step 3.3 — Train the segmentation model (scripts/train_seg.py)
 The segmentation model learns to draw a mask around the blood stain. This is the first of two models you will train.
 # scripts/train_seg.py
@@ -426,9 +472,11 @@ for epoch in range(EPOCHS):
         print(f'  >>> Saved new best model (IoU={val_iou:.4f})')
 
 print(f'Training complete. Best validation IoU: {best_iou:.4f}')
-# Target: IoU > 0.75 on real imagesRun this in Google Colab. A full 50-epoch run takes approximately 30–45 minutes on a free Colab GPU.
+# Target: IoU > 0.75 on real images
+Run this in Google Colab. A full 50-epoch run takes approximately 30–45 minutes on a free Colab GPU.
 
-CHECKPOINT:  After training, look at the output. Your best validation IoU should be above 0.75. If it is below 0.60, your masks are likely inaccurate — go back and re-check Step 2.4.
+CHECKPOINT:  After training, look at the output. Your best validation IoU should be above 0.75. If it is below 0.60, your masks are likely inaccurate — go back and re-check Step 2.4.
+
 Step 3.4 — Train the regression model (scripts/train_reg.py)
 The regression model takes the masked stain region and predicts blood volume in mL. This is the second model.
 # scripts/train_reg.py
@@ -507,8 +555,10 @@ for epoch in range(EPOCHS):
     if train_mae < best_mae:
         best_mae = train_mae
         torch.save(model.state_dict(), 'models/reg_best.pt')
-print(f'Best MAE: {best_mae:.1f} mL')
-CHECKPOINT:  After training, your best MAE should be below 40 mL on the training set. If it is above 60 mL after 80 epochs, your dataset likely has inconsistent labels — re-verify your volume measurements.
+print(f'Best MAE: {best_mae:.1f} mL')
+
+CHECKPOINT:  After training, your best MAE should be below 40 mL on the training set. If it is above 60 mL after 80 epochs, your dataset likely has inconsistent labels — re-verify your volume measurements.
+
 Step 3.5 — Evaluate on your real test images (scripts/evaluate.py)
 This is the moment of truth. You run both models on your real labeled images and see how accurate the predictions are.
 # scripts/evaluate.py
@@ -566,8 +616,10 @@ rmse = np.sqrt(np.mean([e['error']**2 for e in errors]))
 within15 = sum(1 for e in errors if e['pct'] <= 15) / len(errors) * 100
 print(f'\nMAE:  {mae:.1f} mL')
 print(f'RMSE: {rmse:.1f} mL')
-print(f'Within 15% error: {within15:.0f}%')
-CHECKPOINT:  TARGET: MAE below 45 mL on real images. If MAE is above 60 mL, see the Troubleshooting section at the end of Part 3.
+print(f'Within 15% error: {within15:.0f}%')
+
+CHECKPOINT:  TARGET: MAE below 45 mL on real images. If MAE is above 60 mL, see the Troubleshooting section at the end of Part 3.
+
 Troubleshooting high MAE
 If your real image MAE is too high, work through these checks in order:
 15. Check the segmentation masks on your real images first. Run the seg model alone and visualise its mask output. If the mask is completely wrong (all black, or covering the whole image), the segmentation model needs more training data or better augmentation.
@@ -622,8 +674,11 @@ torch.onnx.export(
     dynamic_axes={'image': {0: 'batch'}},
     opset_version=12
 )
-print('Regression model exported to models/reg_model.onnx')python scripts/export_onnx.py
-CHECKPOINT:  Verify both .onnx files exist in your models/ folder. Check their sizes — the seg model should be 5–12 MB and the reg model 3–8 MB.
+print('Regression model exported to models/reg_model.onnx')
+python scripts/export_onnx.py
+
+CHECKPOINT:  Verify both .onnx files exist in your models/ folder. Check their sizes — the seg model should be 5–12 MB and the reg model 3–8 MB.
+
 Step 4.2 — Convert ONNX to TFLite
 Run this in Google Colab (TFLite converter needs TensorFlow which is easiest to use in Colab):
 # In Google Colab:
@@ -648,8 +703,10 @@ converter2.optimizations              = [tf.lite.Optimize.DEFAULT]
 converter2.target_spec.supported_types = [tf.float16]
 tflite_model2 = converter2.convert()
 open('models/blood_loss_reg.tflite', 'wb').write(tflite_model2)
-print(f'Reg model size: {len(tflite_model2)/1024/1024:.2f} MB')
-CHECKPOINT:  Both .tflite files should exist. Target sizes: seg model under 6 MB, reg model under 4 MB. Combined under 10 MB so they can be bundled in the app.
+print(f'Reg model size: {len(tflite_model2)/1024/1024:.2f} MB')
+
+CHECKPOINT:  Both .tflite files should exist. Target sizes: seg model under 6 MB, reg model under 4 MB. Combined under 10 MB so they can be bundled in the app.
+
 Step 4.3 — Verify TFLite accuracy
 Before integrating into the app, confirm the TFLite models give the same predictions as the PyTorch models:
 import numpy as np, tflite_runtime.interpreter as tflite
@@ -665,7 +722,8 @@ interp.set_tensor(inp[0]['index'], test_img)
 interp.invoke()
 mask_out = interp.get_tensor(out[0]['index'])
 print(f'Mask output shape: {mask_out.shape}')  # should be (1,1,256,256) or (1,256,256,1)
-print('TFLite segmentation model: OK')
+print('TFLite segmentation model: OK')
+
 
 Part 5 — MVP Prototype (Working Demo App)
 Before integrating into the React Native app, build a simple web-based prototype. This lets you test the full pipeline end-to-end in minutes using just a browser. You can demo this to stakeholders and clinical partners right away.
@@ -797,17 +855,32 @@ def estimate_route():
         return jsonify({'error': str(e)}), 500
 
 if __name__ == '__main__':
-    app.run(debug=True, port=5000)
-Step 5.2 — Run the MVP prototype
-cd mvp_app
-python app.pyOpen your browser and go to http://localhost:5000. You should see the upload interface.
+    app.run(debug=True, port=5050, host='0.0.0.0')
 
-TIP:  To run this on your phone (for a realistic demo), make sure your phone and laptop are on the same WiFi network. Find your laptop's local IP address (run ifconfig on Mac/Linux or ipconfig on Windows) and open http://YOUR_IP:5000 on your phone's browser.
-CHECKPOINT:  Test with 3 of your real labeled images. The estimates do not need to be perfect at this stage — this is a prototype. The goal is to confirm the full pipeline works end-to-end: image in, mL estimate out.
+Step 5.2 — Run the MVP prototype
+python mvp_app/app.py
+Open your browser and go to http://localhost:5050. You should see the upload interface.
+
+TIP:  To run this on your phone (for a realistic demo), make sure your phone and laptop are on the same WiFi network. Find your laptop's local IP address (run ifconfig on Mac/Linux or ipconfig on Windows) and open http://YOUR_IP:5050 on your phone's browser.
+
+CHECKPOINT:  Test with 3 of your real labeled images. The estimates do not need to be perfect at this stage — this is a prototype. The goal is to confirm the full pipeline works end-to-end: image in, mL estimate out.
+
 Step 5.3 — MVP acceptance test
 Before calling the prototype ready to demo, run this quick acceptance test:
 
-TestPass criteriaUpload a pad image (known 50 mL)Estimate between 20–80 mLUpload a sheet image (known 200 mL)Estimate between 100–300 mLUpload a drape image (known 100 mL)Estimate between 50–200 mLUpload a non-blood image (clean pad)Estimate under 20 mLUpload a very dark/blurry imageApp returns result (does not crash)
+Test
+Pass criteria
+Upload a pad image (known 50 mL)
+Estimate between 20–80 mL
+Upload a sheet image (known 200 mL)
+Estimate between 100–300 mL
+Upload a drape image (known 100 mL)
+Estimate between 50–200 mL
+Upload a non-blood image (clean pad)
+Estimate under 20 mL
+Upload a very dark/blurry image
+App returns result (does not crash)
+
 If the prototype passes all 5 tests, it is ready to demonstrate to clinical partners and for integration into the MotivAid React Native app (Sprint 8).
 
 
@@ -820,16 +893,19 @@ Step 6.1 — Install the React Native TFLite package
 npm install react-native-fast-tflite
 
 # iOS only — install CocoaPods dependency:
-cd ios && pod install && cd ..
+cd ios && pod install && cd ..
+
 Step 6.2 — Bundle the model files
 Copy the two .tflite files into your app's assets folder:
 cp models/blood_loss_seg.tflite YOUR_APP/assets/models/
-cp models/blood_loss_reg.tflite YOUR_APP/assets/models/In your metro.config.js, add tflite to the asset extensions list:
+cp models/blood_loss_reg.tflite YOUR_APP/assets/models/
+In your metro.config.js, add tflite to the asset extensions list:
 module.exports = {
   resolver: {
     assetExts: ['tflite', 'png', 'jpg', ...defaultAssetExts],
   }
-};
+};
+
 Step 6.3 — Write the inference wrapper
 Create the file lib/ai/blood-loss-camera.ts in your app:
 // lib/ai/blood-loss-camera.ts
@@ -885,8 +961,10 @@ function buildSurfaceOneHot(s: SurfaceType): Float32Array {
 
 // preprocessImage, applyMaskAndResize, computeCoverage:
 // implement these using expo-image-manipulator for resize/normalize
-// and manual array ops for masking.
-TIP:  The three helper functions (preprocessImage, applyMaskAndResize, computeCoverage) require image manipulation. Use expo-image-manipulator for resizing and a typed Float32Array loop for normalization. These are around 30 lines each — ask your React Native developer to implement them once the model files are confirmed working.
+// and manual array ops for masking.
+
+TIP:  The three helper functions (preprocessImage, applyMaskAndResize, computeCoverage) require image manipulation. Use expo-image-manipulator for resizing and a typed Float32Array loop for normalization. These are around 30 lines each — ask your React Native developer to implement them once the model files are confirmed working.
+
 Step 6.4 — Add the surface type selector to the UI
 In your app/(app)/clinical/ai-blood-loss.tsx screen, add a surface type picker above the camera button. This single control materially improves accuracy because your regression model is conditioned on material type.
 const [surfaceType, setSurfaceType] = useState<SurfaceType>('pad');
@@ -901,7 +979,8 @@ const [surfaceType, setSurfaceType] = useState<SurfaceType>('pad');
       <Text>{s}</Text>
     </TouchableOpacity>
   ))}
-</View>
+</View>
+
 Step 6.5 — Offline acceptance test
 Before shipping, perform this final test on a physical device:
 19. Put the device in airplane mode (no internet)
@@ -911,17 +990,62 @@ Before shipping, perform this final test on a physical device:
 23. Confirm the Accept button saves the value to the patient record
 24. Confirm the saved value shows in the patient detail screen
 
-CHECKPOINT:  All 6 steps must pass for the feature to be considered ready. The most common failure is the model file not being bundled correctly (a blank or zero estimate). If this happens, verify the assets/models/ folder is included in your metro.config.js assetExts list.
+CHECKPOINT:  All 6 steps must pass for the feature to be considered ready. The most common failure is the model file not being bundled correctly (a blank or zero estimate). If this happens, verify the assets/models/ folder is included in your metro.config.js assetExts list.
+
 
 
 Quick Reference — Command Cheat Sheet
 Keep this page handy while working. These are the most common commands you will use.
 
-TaskCommandActivate environment (Mac/Linux)source venv/bin/activateActivate environment (Windows)venv\Scripts\activateAudit real imagespython scripts/audit_images.pyGenerate maskspython scripts/generate_masks.pyBuild synthetic labelspython scripts/build_labels.pyEvaluate on real imgspython scripts/evaluate.pyExport to ONNXpython scripts/export_onnx.pyRun MVP prototypecd mvp_app && python app.pyOpen MVP in browserhttp://localhost:5000
+Task	Command
+Activate environment (Mac/Linux)	source venv/bin/activate
+Activate environment (Windows)	venv\\Scripts\\activate
+Remove duplicate data	python scripts/deduplicate.py
+Interactive Labeling	python scripts/label_images.py
+Generate masks	python scripts/generate_masks.py
+Build synthetic labels	python scripts/build_labels.py
+Audit real images	python scripts/audit_images.py
+Evaluate on real imgs	python scripts/evaluate.py
+Export to ONNX	python scripts/export_onnx.py
+Run MVP prototype	python mvp_app/app.py
+Open MVP in browser	http://localhost:5050
+
 Glossary — Key Terms Explained
 These are the technical terms used throughout this guide, explained in plain language.
 
-TermWhat it meansModelA file that has been trained to recognise patterns. Like a trained inspector who has seen thousands of samples.TrainingShowing the model thousands of examples until it learns the pattern. Like studying for an exam.EpochOne complete pass through all training data. Training runs for 50–80 epochs.LossA score measuring how wrong the model is. Lower is better. Goes down as training progresses.MAE (Mean Absolute Error)The average error in mL across all test images. Your main accuracy metric.IoU (Intersection over Union)Accuracy metric for segmentation. 1.0 = perfect mask. Target: above 0.75.SegmentationDrawing a boundary around the stained region in the image (which pixels are blood vs. background).RegressionPredicting a number (mL) from the image, rather than a category.PyTorchThe Python library used to build and train the model.ONNXAn intermediate model format. Bridge between PyTorch and TFLite.TFLiteTensorFlow Lite. The format that runs models offline on Android/iOS.AugmentationArtificially modifying training images (brightness, rotation) to create variety.Virtual environment (venv)An isolated Python container for your project's libraries.Google ColabFree online environment with GPU access for running training code.FlaskA simple Python web framework used to build the MVP prototype.
+Term
+What it means
+Model
+A file that has been trained to recognise patterns. Like a trained inspector who has seen thousands of samples.
+Training
+Showing the model thousands of examples until it learns the pattern. Like studying for an exam.
+Epoch
+One complete pass through all training data. Training runs for 50–80 epochs.
+Loss
+A score measuring how wrong the model is. Lower is better. Goes down as training progresses.
+MAE (Mean Absolute Error)
+The average error in mL across all test images. Your main accuracy metric.
+IoU (Intersection over Union)
+Accuracy metric for segmentation. 1.0 = perfect mask. Target: above 0.75.
+Segmentation
+Drawing a boundary around the stained region in the image (which pixels are blood vs. background).
+Regression
+Predicting a number (mL) from the image, rather than a category.
+PyTorch
+The Python library used to build and train the model.
+ONNX
+An intermediate model format. Bridge between PyTorch and TFLite.
+TFLite
+TensorFlow Lite. The format that runs models offline on Android/iOS.
+Augmentation
+Artificially modifying training images (brightness, rotation) to create variety.
+Virtual environment (venv)
+An isolated Python container for your project's libraries.
+Google Colab
+Free online environment with GPU access for running training code.
+Flask
+A simple Python web framework used to build the MVP prototype.
+
 End of Implementation Guide — MotivAid Blood Loss AI Module
 MotivAid Blood Loss AI — Step-by-Step Implementation Guide
 

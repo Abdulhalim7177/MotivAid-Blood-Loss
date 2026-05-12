@@ -29,7 +29,7 @@ class BloodLossRegressor(nn.Module):
         backbone = models.mobilenet_v3_small(weights='IMAGENET1K_V1')
         self.features = backbone.features
         self.head = nn.Sequential(
-            nn.Linear(576 + 5 + 3, 256),
+            nn.Linear(576 + 16 + 3, 256),
             nn.Hardswish(),
             nn.Dropout(0.3),
             nn.Linear(256, 64),
@@ -94,7 +94,7 @@ def export_regression():
 
     # Dummy inputs
     dummy_image = torch.randn(1, 3, 224, 224, device=DEVICE)
-    dummy_surface = torch.zeros(1, 5, device=DEVICE)
+    dummy_surface = torch.zeros(1, 16, device=DEVICE)
     dummy_extras = torch.zeros(1, 3, device=DEVICE)
     output_path = os.path.join('models', 'reg_model.onnx')
 

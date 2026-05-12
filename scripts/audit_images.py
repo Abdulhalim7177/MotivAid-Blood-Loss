@@ -13,7 +13,7 @@ from PIL import Image
 IMAGE_DIR = os.path.join('dataset', 'real_test')
 LABELS_FILE = 'labels.json'
 VALID_EXTENSIONS = ('.jpg', '.jpeg', '.png', '.bmp', '.webp')
-SURFACES = ['pad', 'gauze', 'sheet', 'drape', 'other']
+SURFACES = ['bowl', 'container', 'pad', 'pampers', 'drape', 'floor', 'cloth', 'bedsheet', 'towel', 'gauze', 'sheet', 'floor-and-cloth', 'cloth-and-floor', 'pad-and-container', 'pad-and-floor', 'other']
 
 
 def main():

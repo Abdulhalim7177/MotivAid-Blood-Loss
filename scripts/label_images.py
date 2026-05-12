@@ -10,7 +10,7 @@ import platform
 RAW_DIR = "blood-images"
 DEST_DIR = "dataset/synthetic_train"
 
-SURFACES = ["bowl", "container", "pad", "pampers", "drape", "floor", "bedsheet", "towel", "other"]
+SURFACES = ["bowl", "container", "pad", "pampers", "drape", "floor", "cloth", "bedsheet", "towel", "gauze", "sheet", "floor-and-cloth", "cloth-and-floor", "pad-and-container", "pad-and-floor", "other"]
 DISTANCES = ["20cm", "40cm"]
 LIGHTING = ["daylight", "led", "other"]
 CLOT_OPTIONS = ["yes", "no"]

@@ -26,7 +26,12 @@ except ImportError:
 
 app = Flask(__name__)
 
-SURFACE_MAP = {'pad': 0, 'gauze': 1, 'sheet': 2, 'drape': 3, 'other': 4}
+SURFACE_MAP = {
+    'bowl': 0, 'container': 1, 'pad': 2, 'pampers': 3, 'drape': 4,
+    'floor': 5, 'cloth': 6, 'bedsheet': 7, 'towel': 8, 'gauze': 9,
+    'sheet': 10, 'floor-and-cloth': 11, 'cloth-and-floor': 12,
+    'pad-and-container': 13, 'pad-and-floor': 14, 'other': 15
+}
 
 # Model paths (relative to project root)
 PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -84,9 +89,12 @@ def estimate(img_pil, surface_type):
 
     # Step 2: Regression
     img224 = preprocess(img_pil, 224)
-    masked = img224 * mask_bin[:, :, :224, :224]  # rough crop+apply
-    s_idx = SURFACE_MAP.get(surface_type, 4)
-    s_oh = np.zeros((1, 5), dtype=np.float32)
+    # properly resize the mask instead of cropping
+    mask_img = Image.fromarray((mask_bin[0, 0] * 255).astype(np.uint8)).resize((224, 224), Image.NEAREST)
+    mask224 = (np.array(mask_img, dtype=np.float32) / 255.0)[np.newaxis, np.newaxis, :, :]
+    masked = img224 * mask224
+    s_idx = SURFACE_MAP.get(surface_type, 15)  # Default to 'other'
+    s_oh = np.zeros((1, 16), dtype=np.float32)  # Updated to 16 surface types
     s_oh[0, s_idx] = 1.0
     extras = np.zeros((1, 3), dtype=np.float32)
     out = REG_MODEL.run(None, {
@@ -250,10 +258,21 @@ HTML = '''<!DOCTYPE html>
 <div class="card">
   <label for="surface">Surface Type</label>
   <select id="surface">
+    <option value="bowl">Bowl</option>
+    <option value="container">Container</option>
     <option value="pad">Sanitary pad</option>
+    <option value="pampers">Pampers/Diaper</option>
+    <option value="drape">Surgical drape</option>
+    <option value="floor">Floor</option>
+    <option value="cloth">Cloth</option>
+    <option value="bedsheet">Bedsheet</option>
+    <option value="towel">Towel</option>
     <option value="gauze">Gauze / surgical sponge</option>
     <option value="sheet">Hospital sheet</option>
-    <option value="drape">Surgical drape</option>
+    <option value="floor-and-cloth">Floor and cloth</option>
+    <option value="cloth-and-floor">Cloth and floor</option>
+    <option value="pad-and-container">Pad and container</option>
+    <option value="pad-and-floor">Pad and floor</option>
     <option value="other">Other</option>
   </select>
 </div>
