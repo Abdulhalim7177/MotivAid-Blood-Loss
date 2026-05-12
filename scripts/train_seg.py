@@ -30,6 +30,10 @@ VAL_IMAGE_DIR = os.path.join('dataset', 'synthetic_val')
 MASK_DIR = os.path.join('dataset', 'masks')
 LABELS_FILE = os.path.join('dataset', 'synthetic_labels.json')
 
+if not os.path.exists(VAL_IMAGE_DIR) or not os.listdir(VAL_IMAGE_DIR):
+    VAL_IMAGE_DIR = TRAIN_IMAGE_DIR
+    print("  Using training data for validation (no separate val set)")
+
 def train():
     print("=" * 60)
     print("  MotivAid — Training Segmentation Model")
@@ -52,7 +56,8 @@ def train():
     # -- Model --
     model = smp.Unet('mobilenet_v2', encoder_weights='imagenet', in_channels=3, classes=1, activation='sigmoid').to(DEVICE)
     # Using simple DiceLoss + BCELoss combo
-    loss_fn = smp.losses.DiceLoss('binary') + smp.losses.SoftBCEWithLogitsLoss()
+    dice_loss = smp.losses.DiceLoss('binary')
+    bce_loss = smp.losses.SoftBCEWithLogitsLoss()
     optimizer = torch.optim.AdamW(model.parameters(), lr=LR)
 
     # -- Training with Early Stopping --
@@ -72,7 +77,7 @@ def train():
 
             optimizer.zero_grad()
             preds = model(images)
-            loss = loss_fn(preds, masks)
+            loss = dice_loss(preds, masks) + bce_loss(preds, masks)
             loss.backward()
             optimizer.step()
 
@@ -92,7 +97,7 @@ def train():
                 masks = batch['mask'].to(DEVICE)
 
                 preds = model(images)
-                loss = loss_fn(preds, masks)
+                loss = dice_loss(preds, masks) + bce_loss(preds, masks)
                 val_loss += loss.item()
 
                 # Calculate IoU

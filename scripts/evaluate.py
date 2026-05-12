@@ -121,7 +121,9 @@ def main():
     for fname, info in labels.items():
         path = os.path.join('dataset', 'real_test', fname)
         if not os.path.exists(path):
-            continue
+            path = os.path.join('dataset', 'synthetic_train', fname)
+            if not os.path.exists(path):
+                continue
 
         img_np = np.array(Image.open(path).convert('RGB'))
         aug = transforms(image=img_np)
@@ -140,7 +142,15 @@ def main():
             s_idx = SURFACE_MAP.get(info.get('surface_type', 'other'), 15)  # Default to 'other'
             s_oh = torch.zeros(1, 16, device=DEVICE)  # Updated to 16 surface types
             s_oh[0, s_idx] = 1.0
-            extras = torch.zeros(1, 3, device=DEVICE)
+
+            # Extras metadata
+            dist = info.get('distance_cm', 40.0) / 100.0
+            lighting_str = info.get('lighting', 'daylight')
+            light_val = 0.0
+            if lighting_str == 'led': light_val = 1.0
+            elif lighting_str == 'dim': light_val = 2.0
+            clot_val = 1.0 if info.get('has_clot', False) else 0.0
+            extras = torch.tensor([[dist, light_val, clot_val]], dtype=torch.float32, device=DEVICE)
 
             # Prediction
             log_pred = reg_model(masked_224, s_oh, extras)
