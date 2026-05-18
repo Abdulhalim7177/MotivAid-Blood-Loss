@@ -40,9 +40,20 @@ Always follow this sequence when adding new data:
   - Tests the models on your real clinical images and calculates the Error (MAE).
 
 ## 📱 Mobile Conversion (TFLite)
-- **Export to ONNX:** `python scripts/export_onnx.py`
-- **Convert to TFLite:** (Usually done in Colab)
-  - Output: `models/blood_loss_seg.tflite` & `models/blood_loss_reg.tflite`
+
+### Step 1: Export to ONNX
+- **Command:** `python scripts/export_onnx.py`
+  - Output: `models/seg_model.onnx` & `models/reg_model.onnx`
+
+### Step 2: Convert to TFLite (NEW!)
+- **Install dependencies:** `pip install -r requirements_tflite.txt`
+- **Convert:** `python scripts/convert_to_tflite.py`
+  - Output: `models/seg_model.tflite` & `models/reg_model.tflite`
+  - See `TFLITE_CONVERSION_GUIDE.md` for detailed instructions
+
+### Step 3: Deploy to React Native Expo
+- **Copy models:** `cp models/*.tflite <your-expo-project>/assets/models/`
+- See `REACT_NATIVE_INTEGRATION.md` for complete integration guide
 
 ## 🌐 MVP Prototype
 - **Run Web App:** `python mvp_app/app.py`

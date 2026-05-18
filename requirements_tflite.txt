@@ -1,0 +1,11 @@
+# Requirements for TFLite conversion
+# Install with: pip install -r requirements_tflite.txt
+
+# Core dependencies
+onnx>=1.14.0
+onnx2tf
+tensorflow
+numpy>=1.24.0
+
+# Optional: For testing and validation
+pillow>=10.0.0
